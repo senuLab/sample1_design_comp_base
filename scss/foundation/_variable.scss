@@ -1,0 +1,10 @@
+$breakpoints: (
+  "sp": "screen and (max-width: 767px)",
+  "pc": "screen and (min-width: 768px)",
+) !default;
+
+$layers: (
+  header: 5,
+);
+
+$font-family-montserrat: "Montserrat", sans-serif;
