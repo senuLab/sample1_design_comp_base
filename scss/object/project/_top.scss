@@ -1,0 +1,16 @@
+.p-top {
+  background: url(./../../../img/mv@.png) no-repeat center center / cover;
+  height: 66.7rem;
+
+  @include mq("pc") {
+    height: 64.8rem;
+  }
+
+  &__head {
+    padding-top: 22.9rem;
+
+    @include mq("pc") {
+      padding-top: 23.9rem;
+    }
+  }
+}
