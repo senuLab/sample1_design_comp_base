@@ -7,6 +7,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/hiraku.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Sample1</title>
   </head>
@@ -40,6 +41,38 @@
                 Contact
               </a>
             </nav>
+            <button class="hiraku-open-btn u-pc-none  p-header__hamburger" id="offcanvas-btn-right" data-toggle-offcanvas="#js-hiraku-offcanvas-1">
+                <img class="js-header__hamburger-btn js-header__hamburger-btn--open is-active" src="./img/hamburger.svg" alt="ナビゲーション_開くボタン">
+                <img class="js-header__hamburger-btn js-header__hamburger-btn--close" src="./img/batsu.svg" alt="ナビゲーション_閉じるボタン">
+              </button>
+            </header>
+            <div class="offcanvas-right">
+                <div class="p-header__nav-wrap">
+                    <nav class="p-header__nav--sp">
+                    <a href="#a-news" class="p-header__nav-link c-link--header">
+                      News
+                    </a>
+                    <a href="#a-service" class="p-header__nav-link c-link--header">
+                      Service
+                    </a>
+                    <a href="#a-results" class="p-header__nav-link c-link--header">
+                      Results
+                    </a>
+                    <a href="#a-price" class="p-header__nav-link c-link--header">
+                      Price
+                    </a>
+                    <a href="#a-comments" class="p-header__nav-link c-link--header">
+                      Comments
+                    </a>
+                    <a href="#a-qa" class="p-header__nav-link c-link--header">
+                      FAQs
+                    </a>
+                    <a href="#a-contact" class="p-header__nav-link c-link--header">
+                      Contact
+                    </a>
+                  </nav>
+                </div>
+            </div> 
           </div>
         </div>
       </div>
@@ -49,19 +82,22 @@
     <!-- top start -->
     <div class="p-top">
       <div class="p-inner">
-        <p class="p-top__head">
-          詩が生れて、画が出来る。 とかくに人の世は住みにくい。
-        </p>
-        <p class="p-top__body">
-          どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
-        </p>
-        <button class="p-top__btn c-btn--yellow">お問い合わせしてみる</button>
+        <div class="p-top__wrap">
+          <p class="p-top__head">
+            詩が生れて、画が出来る。<br />
+            とかくに人の世は住みにくい。
+          </p>
+          <p class="p-top__body">
+            どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+          </p>
+          <button class="p-top__btn c-btn--yellow">お問い合わせしてみる</button>
+        </div>
       </div>
     </div>
     <!-- top end -->
 
     <!-- news start -->
-    <div class="p-news">
+    <div class="p-news" id="a-news">
       <div class="p-inner">
         <div class="news-wrap">
           <h2 class="p-news__title c-title">News</h2>
@@ -244,7 +280,7 @@
         <p class="p-access__address">
           〒106-6126<br />東京都港区六本木 6丁目 10-1<br />六本木ヒルズ森タワー
         </p>
-        <iframe
+        <!-- <iframe
           src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3241.674114583062!2d139.72727301514442!3d35.66039993019918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z44CSMTA2LTYxMjYg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyoIDbkuIHnm64gMTAtMSDlha3mnKzmnKjjg5Ljg6vjgrrmo67jgr_jg6_jg7w!5e0!3m2!1sja!2sjp!4v1609415672621!5m2!1sja!2sjp"
           class="p-access__map"
           width="600"
@@ -254,7 +290,7 @@
           allowfullscreen=""
           aria-hidden="false"
           tabindex="0"
-        ></iframe>
+        ></iframe> -->
         <button class="p-access__btn c-btn--black">Google Maps</button>
       </div>
     </div>
@@ -351,4 +387,7 @@
     </footer>
     <!-- footer end -->
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="./js/hiraku.min.js"></script>
+  <script src="./js/custom.js"></script>
 </html>

@@ -1,0 +1,11 @@
+.u-pc-none {
+  @include mq("pc") {
+    display: none;
+  }
+}
+
+.u-sp-none {
+  @include mq("sp") {
+    display: none;
+  }
+}
