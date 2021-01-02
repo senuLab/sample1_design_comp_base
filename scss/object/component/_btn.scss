@@ -1,8 +1,10 @@
 .c-btn {
+  padding: 1.6rem 5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 0.5rem #3e3e3e33;
+
   &--yellow {
-    padding: 1.6rem 5rem;
     background-color: $color-yellow;
     color: $color-white;
-    border-radius: 1rem;
   }
 }
