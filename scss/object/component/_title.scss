@@ -1,0 +1,12 @@
+.c-title {
+  font-size: 3rem;
+  font-family: $font-family-montserrat;
+  font-weight: bold;
+  line-height: font-height(3.7rem, 3rem);
+  text-align: center;
+
+  @include mq("pc") {
+    font-size: 3.6rem;
+    line-height: font-height(4.4rem, 3.6rem);
+  }
+}

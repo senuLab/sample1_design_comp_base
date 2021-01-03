@@ -1,0 +1,121 @@
+.p-news {
+  position: relative;
+  //height: auto;
+  height: 55.3rem;
+  background-color: #f3f3f3;
+
+  @include mq("pc") {
+    overflow: hidden;
+    height: auto;
+    max-height: none;
+    min-height: 89.9rem;
+  }
+
+  &__wrap {
+    position: absolute;
+    top: -4rem;
+    //margin-bottom: 6rem;
+    width: inherit;
+    height: auto;
+    max-height: 55.3rem;
+    background-color: $color-white;
+    box-shadow: 0 0.5rem 1.2rem #3e3e3e33;
+
+    @include mq("pc") {
+      overflow: hidden;
+      position: static;
+      width: 100%;
+      height: auto;
+      margin: 12rem 0;
+      min-height: 65.9rem;
+      max-height: none;
+    }
+  }
+
+  &__title {
+    padding: 4rem 0;
+    border-bottom: 0.1rem solid #cecdcd;
+
+    @include mq("pc") {
+      padding: 6rem 0;
+      margin: 0 6rem;
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+  }
+
+  &__inner {
+    @include mq("pc") {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    background: transparent url(./../../../img/news-arrow.svg) no-repeat center
+      right 1.6rem;
+    transition: background-color 0.3s;
+
+    @include mq("pc") {
+      background-position: center right 7.6rem;
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+
+    @include mq("pc") {
+      margin: 0;
+      width: 29.9rem;
+    }
+  }
+
+  &__date {
+    margin-right: 2.4rem;
+    font-size: 1.4rem;
+    line-height: font-height(2rem, 1.4rem);
+
+    @include mq("pc") {
+      margin-right: 4rem;
+      font-size: 1.8rem;
+      line-height: font-height(2.6rem, 1.8rem);
+    }
+  }
+
+  &__category {
+    padding: 0.2rem 1.4rem;
+    border: 0.2rem solid $color-blue;
+    border-radius: 5rem;
+    font-size: 1.2rem;
+    //line-height: font-height(2.4rem, 1.2rem);
+
+    @include mq("pc") {
+      padding: 0.8rem 3.2rem;
+      margin-right: 3.2rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__content {
+    margin-right: 3.883rem;
+    flex: 1;
+    /* width: 100%;
+    max-width: 69.8rem; */
+    font-size: 1.4rem;
+    line-height: font-height(2rem, 1.4rem);
+
+    @include mq("pc") {
+      margin-right: 8.3rem;
+      font-size: 1.8rem;
+      line-height: font-height(2.8rem, 1.8rem);
+    }
+  }
+
+  &__btn {
+    margin: 4rem auto;
+  }
+}

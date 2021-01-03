@@ -9,10 +9,11 @@ var cssdeclsort = require('css-declaration-sorter');
 var mqpacker = require('css-mqpacker');
 var browserSync  = require('browser-sync');
 
+//gulp.task('sass', function() {
 gulp.task('sass', function() {
     console.log('sass compile');
   return gulp.src('./scss/**/*.scss')
-    .pipe(plumber({errorHandler: notify.onError("Error:<%= error.message %>")}))
+    //.pipe(plumber({errorHandler: notify.onError("Error:<%= error.message %>")}))
     .pipe(sassGlob())
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(postcss([mqpacker()]))

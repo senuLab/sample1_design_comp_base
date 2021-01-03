@@ -6,4 +6,21 @@
   @include mq("pc") {
     width: calc(100% - 8rem);
   }
+
+  &--news {
+    width: 100%;
+    padding: 1.4rem 1.6rem;
+    border-bottom: 0.1rem solid #cecdcd;
+
+    @include mq("pc") {
+      width: calc(100% - 12rem);
+      padding: 0;
+      margin: 0 6rem;
+      padding: 3.5rem 0;
+    }
+
+    &:hover {
+      background-color: #4973ff1a;
+    }
+  }
 }

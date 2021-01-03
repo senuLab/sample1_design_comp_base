@@ -8,8 +8,13 @@
 
   &__wrap {
     @include mq("pc") {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
       width: 50%;
+      height: 100%;
       margin-left: auto;
+      padding-bottom: 15.3rem;
     }
   }
 
@@ -21,7 +26,8 @@
     font-weight: bold;
 
     @include mq("pc") {
-      padding-top: 23.9rem;
+      //padding-top: 23.9rem;
+      padding: 0;
       margin-bottom: 4rem;
       font-size: 3.2rem;
       line-height: font-height(4.8rem, 3.2rem);
