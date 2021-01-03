@@ -47,9 +47,12 @@
   }
 
   &__btn {
-    @include mq("sp") {
-      margin: 0 auto;
-      padding: 1.6rem 3.2rem;
+    margin: 0 auto;
+    padding: 1.6rem 3.2rem;
+
+    @include mq("pc") {
+      margin: 0;
+      max-width: 28.2rem;
     }
   }
 

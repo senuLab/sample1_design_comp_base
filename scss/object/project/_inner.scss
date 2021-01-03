@@ -23,4 +23,15 @@
       background-color: #4973ff1a;
     }
   }
+
+  &--service {
+    @include mq("pc") {
+      max-width: 96rem;
+    }
+  }
+
+  &--results {
+    padding: 1.2rem;
+    background-color: $color-white;
+  }
 }

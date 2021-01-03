@@ -1,0 +1,34 @@
+.p-results {
+  overflow: hidden;
+  background-color: #f3f3f3;
+
+  @include mq("pc") {
+    height: 96.9rem;
+  }
+
+  &__wrap {
+    //overflow: hidden;
+    height: 53.2rem;
+    padding: 0 2rem;
+    background-color: #3e3e3e;
+
+    @include mq("pc") {
+      margin-top: 21.5rem;
+    }
+  }
+
+  &__title {
+    color: $color-white;
+    padding: 4rem 0;
+  }
+
+  &__head {
+    padding-bottom: 1.2rem;
+    font-weight: bold;
+  }
+
+  &__body {
+    //background-color: $color-white;
+    //margin-bottom: 1.2rem;
+  }
+}
