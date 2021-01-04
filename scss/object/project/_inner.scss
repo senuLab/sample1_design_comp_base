@@ -33,5 +33,9 @@
   &--results {
     padding: 1.2rem;
     background-color: $color-white;
+
+    @include mq("pc") {
+      padding: 1.6rem;
+    }
   }
 }

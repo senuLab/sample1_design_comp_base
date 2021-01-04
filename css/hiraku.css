@@ -22,7 +22,7 @@
 }
 
 .js-hiraku-offcanvas-body {
-  z-index: 0;
+  z-index: 10000;
   left: 0;
   width: 100%;
   transition: left 0.3s ease-in-out;

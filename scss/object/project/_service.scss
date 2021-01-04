@@ -34,7 +34,7 @@
     @include mq("pc") {
       display: flex;
       position: absolute;
-
+      max-width: 96rem;
       padding: 4.5rem 6rem;
     }
   }
@@ -67,5 +67,9 @@
   &__body {
     font-size: 1.4rem;
     line-height: font-height(2.4rem, 1.4rem);
+  }
+
+  &__btn{
+      
   }
 }
