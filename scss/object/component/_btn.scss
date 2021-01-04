@@ -31,4 +31,16 @@
       color: $color-white;
     }
   }
+
+  &--black {
+    padding: 1.6rem 10rem;
+    background-color: #3e3e3e;
+    color: $color-white;
+    border: 0.1rem solid $color-white;
+
+    &:hover {
+      background-color: $color-white;
+      color: #3e3e3e;
+    }
+  }
 }

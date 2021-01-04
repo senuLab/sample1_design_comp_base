@@ -1,4 +1,9 @@
-.p-card{
-    width: 27.4rem;
-    height: 25.3rem;
+.p-card {
+  width: 27.4rem;
+  height: 25.3rem;
+
+  @include mq("pc") {
+    width: 40rem;
+    height: 36.6rem;
+  }
 }

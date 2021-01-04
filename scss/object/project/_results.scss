@@ -14,6 +14,7 @@
 
     @include mq("pc") {
       margin-top: 21.5rem;
+      height: 75.4rem;
     }
   }
 
@@ -25,10 +26,51 @@
   &__head {
     padding-bottom: 1.2rem;
     font-weight: bold;
+    font-size: 1.4rem;
+    line-height: font-height(1.6rem, 1.4rem);
+
+    @include mq("pc") {
+      padding-bottom: 1.6rem;
+      font-size: 2rem;
+      line-height: font-height(2.4rem, 1.4rem);
+    }
   }
 
   &__body {
-    //background-color: $color-white;
-    //margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    line-height: font-height(1.8rem, 1.2rem);
+
+    @include mq("pc") {
+      font-size: 1.6rem;
+      line-height: font-height(2.4rem, 1.6rem);
+    }
+  }
+
+  &__btn {
+    margin-top: 2.8rem;
+    margin-left: 1rem;
+    width: 31.6rem;
+    font-size: 1.8rem;
+    line-height: font-height(2.3rem, 1.8rem);
+    letter-spacing: font-space(0.36rem);
+
+    @include mq("pc") {
+      width: 28.9rem;
+    }
+  }
+
+  &__slide {
+    /* width: 29.4rem !important;
+    height: 25.3rem !important; */
+    margin-left: 0;
+
+    @include mq("pc") {
+      /* width: 44rem !important;
+      height: 36.6rem !important; */
+    }
+  }
+
+  &__page {
+    margin-top: 4rem;
   }
 }
