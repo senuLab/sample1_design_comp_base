@@ -121,6 +121,40 @@ body {
   color: #3e3e3e;
 }
 
+.c-cell--th {
+  width: 10rem;
+  height: 5.6rem;
+  border-left: 0.1rem solid #707070;
+  background-color: #3e3e3e;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.c-cell--th--first {
+  border-top: 0.1rem solid #707070;
+}
+
+.c-cell--th--second {
+  border-top: 0.1rem solid #ffffff;
+  border-bottom: 0.1rem solid #ffffff;
+}
+
+.c-cell--th--last {
+  border-bottom: 0.1rem solid #707070;
+}
+
+.c-cell--td {
+  width: calc(100%-10rem);
+  max-width: 69.8rem;
+  height: 5.6rem;
+  padding-left: 2rem;
+  border: 0.1rem solid #707070;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
 .c-img {
   width: 100%;
 }
@@ -285,6 +319,37 @@ body {
   margin: 4rem auto;
 }
 
+.p-price {
+  height: 42.3rem;
+  background-color: #f3f3f3;
+}
+
+.p-price__title {
+  padding: 4rem 0;
+  font-size: 3rem;
+}
+
+.p-price__table {
+  margin-bottom: 0.8rem;
+  /* @include mq("pc") {
+      margin: 0 auto 1.2rem;
+    } */
+}
+
+.p-price__th {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.p-price__td {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.p-price__caution {
+  font-size: 1.2rem;
+}
+
 .p-results {
   overflow: hidden;
   background-color: #f3f3f3;
@@ -292,7 +357,7 @@ body {
 
 .p-results__wrap {
   height: 53.2rem;
-  padding: 0 2rem;
+  padding-left: 2rem;
   background-color: #3e3e3e;
 }
 
@@ -371,6 +436,12 @@ body {
   line-height: 1.71429;
 }
 
+.p-table {
+  width: 100%;
+  max-width: 96rem;
+  border-collapse: collapse;
+}
+
 .p-top {
   height: 66.7rem;
   background: url(./../../../img/mv@.png) no-repeat left 22% center/cover;
@@ -419,6 +490,14 @@ body {
   .c-btn--white {
     padding: 2rem 8rem;
     font-size: 2rem;
+  }
+  .c-cell--th {
+    width: 26.2rem;
+    height: 6.1rem;
+  }
+  .c-cell--td {
+    width: calc(100%-26.2rem);
+    height: 6.1rem;
   }
   .c-title {
     font-size: 3.6rem;
@@ -503,12 +582,32 @@ body {
     font-size: 1.8rem;
     line-height: 1.55556;
   }
+  .p-price {
+    height: 69.7rem;
+  }
+  .p-price__title {
+    padding: 12rem 0 6rem 0;
+    font-size: 3.6rem;
+  }
+  .p-price__container {
+    width: 100%;
+    max-width: 96rem;
+    margin: 0 auto 1.2rem;
+  }
+  .p-price__th {
+    font-size: 2.4rem;
+  }
+  .p-price__td {
+    font-size: 2.4rem;
+  }
   .p-results {
     height: 96.9rem;
   }
   .p-results__wrap {
     height: 75.4rem;
     margin-top: 21.5rem;
+    margin-left: 4rem;
+    padding-left: 6rem;
   }
   .p-results__head {
     padding-bottom: 1.6rem;

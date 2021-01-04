@@ -9,11 +9,13 @@
   &__wrap {
     //overflow: hidden;
     height: 53.2rem;
-    padding: 0 2rem;
+    padding-left: 2rem;
     background-color: #3e3e3e;
 
     @include mq("pc") {
       margin-top: 21.5rem;
+      margin-left: 4rem;
+      padding-left: 6rem;
       height: 75.4rem;
     }
   }

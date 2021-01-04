@@ -1,0 +1,57 @@
+.p-price {
+  height: 42.3rem;
+  background-color: #f3f3f3;
+
+  @include mq("pc") {
+    height: 69.7rem;
+  }
+
+  &__title {
+    padding: 4rem 0;
+    font-size: 3rem;
+
+    @include mq("pc") {
+      padding: 12rem 0 6rem 0;
+      font-size: 3.6rem;
+    }
+  }
+
+  &__table {
+    margin-bottom: 0.8rem;
+
+    /* @include mq("pc") {
+      margin: 0 auto 1.2rem;
+    } */
+  }
+
+  &__container {
+    @include mq("pc") {
+      //padding-left: 4rem;
+      width: 100%;
+      max-width: 96rem;
+      margin: 0 auto 1.2rem;
+    }
+  }
+
+  &__th {
+    font-family: $font-family-montserrat;
+    font-size: 2rem;
+
+    @include mq("pc") {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__td {
+    font-family: $font-family-montserrat;
+    font-size: 2rem;
+
+    @include mq("pc") {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__caution {
+    font-size: 1.2rem;
+  }
+}
