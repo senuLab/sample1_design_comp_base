@@ -43,6 +43,7 @@
   }
 
   &__wrap {
+    //overflow: hidden;
     //position: absolute;
     z-index: 2;
     //top: -6rem;
@@ -58,7 +59,8 @@
       //top: -12rem;
       width: 55.5%;
       //max-width: 66.6rem;
-      height: 60.4rem;
+      //height: 60.4rem;
+      height: auto;
     }
 
     &--pc {
@@ -66,7 +68,7 @@
         display: flex;
         width: 100%;
         max-width: 120rem;
-        height: 60.4rem;
+        height: auto;
       }
     }
   }
@@ -81,7 +83,19 @@
 
     &:not(:last-child) {
       margin-bottom: 4rem;
+
+      @include mq("pc") {
+        margin-bottom: 7.2rem;
+      }
     }
+
+    /* &:last-child {
+      margin-bottom: 4rem;
+
+      @include mq("pc") {
+        margin-bottom: 12rem;
+      }
+    } */
   }
 
   &__img {
