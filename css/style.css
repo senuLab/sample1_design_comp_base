@@ -181,6 +181,10 @@ body {
 @import "./object/component/link";
 @import "./object/component/btn";
 @import "./object/component/img"; */
+/* .p-accordion {
+  width: 100%;
+  //max-width: 61.2rem;
+} */
 .p-card {
   width: 27.4rem;
   height: 25.3rem;
@@ -208,6 +212,13 @@ body {
 
 .p-comments__item {
   display: flex;
+  /* &:last-child {
+      margin-bottom: 4rem;
+
+      @include mq("pc") {
+        margin-bottom: 12rem;
+      }
+    } */
 }
 
 .p-comments__item:not(:last-child) {
@@ -300,6 +311,7 @@ body {
 }
 
 .p-inner--comments {
+  height: auto;
   padding: 4rem 2rem;
 }
 
@@ -394,6 +406,83 @@ body {
 
 .p-price__caution {
   font-size: 1.2rem;
+}
+
+.p-qa {
+  width: 100%;
+  overflow: hidden;
+  background: transparent url(./../../../img/qa-bg@.png) no-repeat center center/cover;
+}
+
+.p-qa__title {
+  margin: 4rem 0;
+}
+
+.p-qa__wrap {
+  margin-bottom: 6rem;
+}
+
+.p-qa__item {
+  width: 100%;
+  padding: 2rem 1.6rem 1.6rem 1.6rem;
+  border-radius: 0.4rem;
+  background-color: #ffffff;
+}
+
+.p-qa__item:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.p-qa__question {
+  position: relative;
+  padding-left: 4rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.p-qa__question::before {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  transform: translateY(-50%);
+  border-radius: 9rem;
+  background-color: #3b69ff;
+  content: "Q";
+  color: #ffffff;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.p-qa__question--open {
+  background: transparent url(./../../../img/minus.svg) no-repeat center right;
+}
+
+.p-qa__question--close {
+  background: transparent url(./../../../img/plus.svg) no-repeat center right;
+}
+
+.p-qa__answer {
+  padding-bottom: 1.2rem;
+  font-size: 1.4rem;
+}
+
+.p-qa__answer-wrap {
+  margin-top: 1.6rem;
+  padding: 1.2rem 1.2rem 0 1.2rem;
+  background-color: #3b69ff33;
+}
+
+.p-qa__answer-wrap--open {
+  display: block;
+}
+
+.p-qa__answer-wrap--close {
+  display: none;
 }
 
 .p-results {
@@ -590,13 +679,16 @@ body {
   }
   .p-comments__wrap {
     width: 55.5%;
-    height: 60.4rem;
+    height: auto;
   }
   .p-comments__wrap--pc {
     display: flex;
     width: 100%;
     max-width: 120rem;
-    height: 60.4rem;
+    height: auto;
+  }
+  .p-comments__item:not(:last-child) {
+    margin-bottom: 7.2rem;
   }
   .p-comments__img {
     width: 10rem;
@@ -705,6 +797,26 @@ body {
   }
   .p-price__td {
     font-size: 2.4rem;
+  }
+  .p-qa__title {
+    margin: 6rem 0;
+  }
+  .p-qa__wrap {
+    width: 100%;
+    max-width: 61.2rem;
+    margin-bottom: 12rem;
+    margin-left: auto;
+  }
+  .p-qa__item:not(:last-child) {
+    margin-bottom: 3.2rem;
+  }
+  .p-qa__answer {
+    padding-bottom: 1.6rem;
+    font-size: 1.6rem;
+  }
+  .p-qa__answer-wrap {
+    margin-top: 2rem;
+    padding: 1.6rem 1.6rem 0 1.6rem;
   }
   .p-results {
     height: 96.9rem;

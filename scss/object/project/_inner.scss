@@ -40,6 +40,8 @@
   }
 
   &--comments {
+    //overflow: hidden;
+    height: auto;
     padding: 4rem 2rem;
 
     @include mq("pc") {
