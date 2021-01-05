@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./css/hiraku.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -42,7 +43,7 @@
                 Contact
               </a>
             </nav>
-            <button
+            <!-- <button
               class="hiraku-open-btn u-pc-none p-header__hamburger"
               id="offcanvas-btn-right"
               data-toggle-offcanvas="#js-hiraku-offcanvas-1"
@@ -57,7 +58,7 @@
                 src="./img/batsu.svg"
                 alt="ナビゲーション_閉じるボタン"
               />
-            </button>
+            </button> -->
 
             <div class="offcanvas-right">
               <div class="p-header__nav-wrap">
@@ -337,7 +338,9 @@
             </tr>
             <tr>
               <th class="p-price__th c-cell--th c-cell--th--second">row 2</th>
-              <td class="p-price__td c-cell--td">Price ¥10,000</td>
+              <td class="p-price__td c-cell--td c-cell--td--second">
+                Price ¥10,000
+              </td>
             </tr>
             <tr>
               <th class="p-price__th c-cell--th c-cell--th--last">row 3</th>
@@ -353,32 +356,39 @@
     <!-- comments start -->
     <div class="p-comments">
       <div class="p-inner">
-        <h2 class="p-comments__title c-title">Comments</h2>
-        <div class="p-comments__wrap">
-          <div class="p-comments__item">
+        <div class="p-comments__wrap--pc">
+          <div class="p-comments__wrap">
             <div class="p-inner--comments">
-              <img
-                src="./img/comments1@.png"
-                alt=""
-                class="p-comments__item c-img"
-              />
-              <p class="p-comments__comment">
-                どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
-              </p>
+              <h2 class="p-comments__title c-title">Comments</h2>
+              <div class="p-comments__item">
+                <img
+                  src="./img/comments1@.png"
+                  alt=""
+                  class="p-comments__img c-img"
+                />
+                <p class="p-comments__comment">
+                  どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                </p>
+                <!-- </div> -->
+              </div>
+              <div class="p-comments__item">
+                <!-- <div class="p-inner--comments"> -->
+                <img
+                  src="./img/comments2@.png"
+                  alt=""
+                  class="p-comments__img c-img"
+                />
+                <p class="p-comments__comment">
+                  どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
+                </p>
+              </div>
             </div>
           </div>
-          <div class="p-comments__item">
-            <div class="p-inner--comments">
-              <img
-                src="./img/comments2@.png"
-                alt=""
-                class="p-comments__item c-img"
-              />
-              <p class="p-comments__comment">
-                どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。意地を通せば窮屈だ。
-              </p>
-            </div>
-          </div>
+          <img
+            class="p-comments__img--pc c-img"
+            src="./img/comments3@.png"
+            alt=""
+          />
         </div>
       </div>
     </div>

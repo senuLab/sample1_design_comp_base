@@ -1,5 +1,4 @@
 .p-service {
-  //overflow: hidden;
   height: 87.8rem;
   background: linear-gradient(
     to bottom,
@@ -10,14 +9,41 @@
   );
 
   @include mq("pc") {
-    //overflow: none;
+    position: relative;
+    //z-index: 0;
     height: 40rem;
     background: none;
     background-color: #3e3e3e;
+    /* background: linear-gradient(
+      180deg,
+      #3e3e3e 0,
+      #3e3e3e 50%,
+      #f3f3f3 50%,
+      #f3f3f3 100%
+    ); */
   }
+
+  /* &::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      #3e3e3e 0,
+      #3e3e3e 50%,
+      #f3f3f3 50%,
+      #f3f3f3 100%
+    ); 
+  }*/
 
   &__title {
     position: relative;
+    //z-index: 2;
     padding: 4rem 0;
     color: $color-white;
 
@@ -27,6 +53,7 @@
   }
 
   &__wrap {
+    width: 100%;
     padding: 4rem 1.6rem;
     background-color: $color-white;
     box-shadow: 0 0.5rem 1.2rem #3e3e3e33;
@@ -34,8 +61,13 @@
     @include mq("pc") {
       display: flex;
       position: absolute;
+      //z-index: 2;
+      left: 50%;
+      width: calc(100% - 8rem);
+      transform: translateX(calc(-1 * (50% + 4rem)));
       max-width: 96rem;
       padding: 4.5rem 6rem;
+      margin: 0 4rem;
     }
   }
 
@@ -69,7 +101,6 @@
     line-height: font-height(2.4rem, 1.4rem);
   }
 
-  &__btn{
-      
+  &__btn {
   }
 }

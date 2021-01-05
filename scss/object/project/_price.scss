@@ -1,9 +1,9 @@
 .p-price {
-  height: 42.3rem;
+  height: 36.3rem;
   background-color: #f3f3f3;
 
   @include mq("pc") {
-    height: 69.7rem;
+    height: 54.9rem;
   }
 
   &__title {
