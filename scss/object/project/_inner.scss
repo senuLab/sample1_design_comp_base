@@ -40,12 +40,22 @@
   }
 
   &--comments {
-    //overflow: hidden;
     height: auto;
     padding: 4rem 2rem;
 
     @include mq("pc") {
       padding: 12rem 6rem;
+    }
+  }
+
+  &--access {
+    @include mq("pc") {
+      display: grid;
+      grid-template-rows: 28.8rem 1fr;
+      grid-template-columns: 41.4rem 1fr;
+      max-width: 120rem;
+      margin: 0 auto;
+      padding-left: 6rem;
     }
   }
 }
