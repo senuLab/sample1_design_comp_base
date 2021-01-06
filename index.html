@@ -7,7 +7,12 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/hiraku.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -482,8 +487,8 @@
             どこへ越しても住みにくいと悟った時、詩が生れて、画が出来る。
           </p>
         </div>
-        <form action="post" class="p-contact__form p-form">
-          <div class="p-contact__form-item p-form__item--kind">
+        <form action="post" class="p-contact__form">
+          <div class="p-contact__form-item">
             <label class="p-contact__label">お問い合わせ種別 </label>
             <select
               name="kind"
@@ -494,7 +499,7 @@
               <option value="依頼">依頼</option>
             </select>
           </div>
-          <div class="p-contact__form-item p-form__item--name">
+          <div class="p-contact__form-item">
             <label class="p-contact__label p-contact__label--required"
               >氏名
             </label>
@@ -505,7 +510,7 @@
               required
             />
           </div>
-          <div class="p-contact__form-item p-form__item--kana">
+          <div class="p-contact__form-item">
             <label class="p-contact__label p-contact__label--required">
               フリガナ
             </label>
@@ -516,7 +521,7 @@
               required
             />
           </div>
-          <div class="p-contact__form-item p-form__item--email">
+          <div class="p-contact__form-item">
             <label class="p-contact__label">メールアドレス</label>
             <input
               type="email"
@@ -524,7 +529,7 @@
               placeholder="sample@gmail.com"
             />
           </div>
-          <div class="p-contact__form-item p-form__item--gender">
+          <div class="p-contact__form-item p-contact__form-item--gender">
             <label class="p-contact__label">性別</label>
             <label for="man" class="p-contact__label--radio">
               <input
@@ -542,7 +547,7 @@
               />女性
             </label>
           </div>
-          <div class="p-contact__form-item p-form__item--message">
+          <div class="p-contact__form-item p-contact__form-item--message">
             <label class="p-contact__label p-contact__label--message"
               >メッセージ</label
             >
@@ -551,7 +556,7 @@
               class="p-contact__input p-contact__input--textarea"
             ></textarea>
           </div>
-          <div class="p-contact__form-item p-form__item--checkbox">
+          <div class="p-contact__form-item">
             <label for="check" class="p-contact__label">
               <input
                 type="checkbox"
@@ -571,19 +576,25 @@
     <!-- footer start -->
     <footer class="l-footer">
       <div class="p-footer">
-        <div class="p-footer__icons">
-          <i class="p-footer__icon c-icon--twitter"></i>
-          <i class="p-footer__icon c-icon--facebook"></i>
+        <div class="p-footer__wrap">
+          <div class="p-footer__icons">
+            <i class="p-footer__icon c-icon fab fa-twitter"></i>
+            <i class="p-footer__icon c-icon fab fa-facebook"></i>
+          </div>
+          <div class="p-footer__site-map">
+            <a href="#" class="p-footer__link c-link--footer">サイトマップ</a>
+            <a href="#" class="p-footer__link c-link--footer"
+              >個人情報保護方針</a
+            >
+            <a href="#" class="p-footer__link c-link--footer">
+              プライバシーポリシー
+            </a>
+          </div>
         </div>
-        <div class="footer__site-map">
-          <a href="#" class="p-footer__link c-link--footer">サイトマップ</a>
-          <a href="#" class="p-footer__link c-link--footer">個人情報保護方針</a>
-          <a href="#" class="p-footer__link c-link--footer">
-            プライバシーポリシー
-          </a>
+        <div class="p-footer__wrap">
+          <h2 class="p-footer__logo c-logo--footer">Sample Corp.</h2>
+          <p class="p-footer__copyright">© デイトラ Landing page Sample.</p>
         </div>
-        <h2 class="p-footer__logo c-logo--footer">Sample Corp.</h2>
-        <p class="copyright">© デイトラ Landing page Sample.</p>
       </div>
     </footer>
     <!-- footer end -->
