@@ -14,7 +14,6 @@
   &__wrap {
     position: absolute;
     top: -4rem;
-    //margin-bottom: 6rem;
     width: inherit;
     height: auto;
     max-height: 55.3rem;
@@ -91,7 +90,6 @@
     border: 0.2rem solid $color-blue;
     border-radius: 5rem;
     font-size: 1.2rem;
-    //line-height: font-height(2.4rem, 1.2rem);
 
     @include mq("pc") {
       padding: 0.8rem 3.2rem;
@@ -103,8 +101,6 @@
   &__content {
     margin-right: 3.883rem;
     flex: 1;
-    /* width: 100%;
-    max-width: 69.8rem; */
     font-size: 1.4rem;
     line-height: font-height(2rem, 1.4rem);
 

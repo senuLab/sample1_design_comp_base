@@ -64,6 +64,10 @@ button {
   display: block;
 }
 
+input {
+  border: none;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -114,6 +118,7 @@ body {
   border: 0.1rem solid #ffffff;
   background-color: #3e3e3e;
   color: #ffffff;
+  transition: all 0.3s;
 }
 
 .c-btn--black:hover {
@@ -222,9 +227,7 @@ body {
 }
 
 .p-comments {
-  /* position: relative;
-  z-index: 2; */
-  height: 48.55rem;
+  overflow: hidden;
   background: linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 14.1%, #3e3e3e 14.2%, #3e3e3e 100%);
 }
 
@@ -232,6 +235,7 @@ body {
   z-index: 2;
   width: 100%;
   height: auto;
+  margin-bottom: 4rem;
   background-color: #ffffff;
   box-shadow: 0 0.5rem 1.2rem #3e3e3e33;
 }
@@ -243,13 +247,6 @@ body {
 
 .p-comments__item {
   display: flex;
-  /* &:last-child {
-      margin-bottom: 4rem;
-
-      @include mq("pc") {
-        margin-bottom: 12rem;
-      }
-    } */
 }
 
 .p-comments__item:not(:last-child) {
@@ -269,6 +266,118 @@ body {
 .p-comments__comment {
   font-size: 1.405rem;
   line-height: 1.42349;
+}
+
+.p-contact {
+  width: 100%;
+  overflow: hidden;
+  background: transparent url(./../../../img/contact-bg@.png) no-repeat center center/cover;
+}
+
+.p-contact__top {
+  width: 100%;
+  max-width: 96rem;
+  margin-top: 4rem;
+  padding: 4rem 1.6rem;
+  border-radius: 1.2rem 1.2rem 0 0;
+  background: transparent url(./../../../img/contact1@.png) no-repeat center center/cover;
+}
+
+.p-contact__title {
+  margin-bottom: 1.2rem;
+  color: #ffffff;
+}
+
+.p-contact__message {
+  color: #ffffff;
+}
+
+.p-contact__form {
+  width: 100%;
+  max-width: 96rem;
+  margin-bottom: 4rem;
+  padding: 4rem 1.2rem;
+}
+
+.p-contact__label {
+  display: block;
+  margin-bottom: 1.6rem;
+  font-weight: bold;
+}
+
+.p-contact__label--radio {
+  display: inline-block;
+  margin-right: 4rem;
+}
+
+.p-contact__label--required {
+  display: inline-block;
+  position: relative;
+}
+
+.p-contact__label--required::after {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: -6rem;
+  width: 2.4rem;
+  height: 1.2rem;
+  margin-left: 1.2rem;
+  padding: 0.2rem 0.8rem;
+  transform: translateY(-50%);
+  border-radius: 0.2rem;
+  background-color: #ff4646;
+  content: "必須";
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.p-contact__input {
+  display: block;
+  width: 100%;
+  margin-bottom: 3.2rem;
+  border-bottom: 0.1rem solid rgba(62, 62, 62, 0.5);
+  outline: none;
+}
+
+.p-contact__input--select {
+  height: 3.8rem;
+  padding-left: 1.2rem;
+  border: none;
+  border: 0.1rem solid rgba(62, 62, 62, 0.5);
+}
+
+.p-contact__input--radio {
+  display: inline-block;
+}
+
+.p-contact__input--textarea {
+  min-height: 16rem;
+}
+
+.p-contact__input--checkbox {
+  display: inline-block;
+}
+
+.p-contact__btn {
+  margin: 0 auto;
+  padding: 1.6rem 5rem;
+}
+
+.p-form {
+  border-radius: 0 0 1.2rem 1.2rem;
+  background-color: #ffffff;
+}
+
+.p-form__item--gender {
+  margin-bottom: 3.2rem;
+  /* @include mq("pc") {
+        margin-bottom: 0;
+      } */
+}
+
+.p-form__item--message {
+  margin-bottom: 3.2rem;
 }
 
 .p-header {
@@ -398,8 +507,6 @@ body {
 .p-news__content {
   flex: 1;
   margin-right: 3.883rem;
-  /* width: 100%;
-    max-width: 69.8rem; */
   font-size: 1.4rem;
   line-height: 1.42857;
 }
@@ -420,9 +527,6 @@ body {
 
 .p-price__table {
   margin-bottom: 0.8rem;
-  /* @include mq("pc") {
-      margin: 0 auto 1.2rem;
-    } */
 }
 
 .p-price__th {
@@ -567,23 +671,6 @@ body {
 .p-service {
   height: 87.8rem;
   background: linear-gradient(to bottom, #3e3e3e 0%, #3e3e3e 50%, #f3f3f3 50%, #f3f3f3 100%);
-  /* &::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      to right,
-      #3e3e3e 0,
-      #3e3e3e 50%,
-      #f3f3f3 50%,
-      #f3f3f3 100%
-    ); 
-  }*/
 }
 
 .p-service__title {
@@ -695,7 +782,7 @@ body {
   }
   .p-access::before {
     display: inline-block;
-    z-index: 1;
+    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
@@ -738,7 +825,6 @@ body {
   .p-comments {
     z-index: 0;
     position: relative;
-    height: 69.6rem;
     background: linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 14.1%, #3e3e3e 14.1%, #3e3e3e 100%);
   }
   .p-comments::after {
@@ -755,12 +841,13 @@ body {
   .p-comments__wrap {
     width: 55.5%;
     height: auto;
+    margin-bottom: 0;
   }
   .p-comments__wrap--pc {
     display: flex;
     width: 100%;
-    max-width: 120rem;
     height: auto;
+    margin-bottom: 12rem;
   }
   .p-comments__item:not(:last-child) {
     margin-bottom: 7.2rem;
@@ -772,10 +859,71 @@ body {
   .p-comments__img--pc {
     display: block;
     z-index: 2;
-    width: auto;
-    max-width: 44.5%;
+    width: 44.5%;
     height: auto;
     margin: auto 0;
+  }
+  .p-contact__top {
+    margin: 6rem auto 0;
+    padding: 6rem 0;
+    text-align: center;
+  }
+  .p-contact__title {
+    margin-bottom: 1.6rem;
+  }
+  .p-contact__form {
+    margin: 0 auto;
+    margin-bottom: 6rem;
+    padding: 6rem 12rem;
+  }
+  .p-contact__form-item {
+    margin-bottom: 3.2rem;
+  }
+  .p-contact__form-item:not(:nth-child(6)) {
+    display: flex;
+    align-items: center;
+  }
+  .p-contact__label {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .p-contact__label:not(:last-child) {
+    width: 16.8rem;
+  }
+  .p-contact__label--message {
+    margin-bottom: 0.8rem;
+  }
+  .p-contact__label--required::after {
+    display: inline;
+    position: static;
+  }
+  .p-contact__input {
+    flex: 1;
+    width: auto;
+    margin-bottom: 0;
+  }
+  .p-contact__input::-moz-placeholder {
+    padding-left: 1.2rem;
+  }
+  .p-contact__input:-ms-input-placeholder {
+    padding-left: 1.2rem;
+  }
+  .p-contact__input::placeholder {
+    padding-left: 1.2rem;
+  }
+  .p-contact__input--select {
+    max-width: 17.8rem;
+    min-height: 4rem;
+  }
+  .p-contact__input--textarea {
+    width: 100%;
+    min-height: 20rem;
+  }
+  .p-contact__btn {
+    margin: 0;
+  }
+  .p-form__item--message {
+    margin-bottom: 4rem;
   }
   .p-header__logo {
     display: none;
@@ -932,13 +1080,6 @@ body {
     height: 40rem;
     background: none;
     background-color: #3e3e3e;
-    /* background: linear-gradient(
-      180deg,
-      #3e3e3e 0,
-      #3e3e3e 50%,
-      #f3f3f3 50%,
-      #f3f3f3 100%
-    ); */
   }
   .p-service__title {
     padding: 6rem 0;

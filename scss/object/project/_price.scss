@@ -18,15 +18,10 @@
 
   &__table {
     margin-bottom: 0.8rem;
-
-    /* @include mq("pc") {
-      margin: 0 auto 1.2rem;
-    } */
   }
 
   &__container {
     @include mq("pc") {
-      //padding-left: 4rem;
       width: 100%;
       max-width: 96rem;
       margin: 0 auto 1.2rem;

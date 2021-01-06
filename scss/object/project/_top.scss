@@ -26,7 +26,6 @@
     font-weight: bold;
 
     @include mq("pc") {
-      //padding-top: 23.9rem;
       padding: 0;
       margin-bottom: 4rem;
       font-size: 3.2rem;

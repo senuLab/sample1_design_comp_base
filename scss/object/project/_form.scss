@@ -1,0 +1,22 @@
+.p-form {
+  background-color: $color-white;
+  border-radius: 0 0 1.2rem 1.2rem;
+
+  &__item {
+    &--gender {
+      margin-bottom: 3.2rem;
+
+      /* @include mq("pc") {
+        margin-bottom: 0;
+      } */
+    }
+
+    &--message {
+      margin-bottom: 3.2rem;
+
+      @include mq("pc") {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}

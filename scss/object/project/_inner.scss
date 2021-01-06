@@ -2,6 +2,7 @@
   width: calc(100% - 3.2rem);
   height: 100%;
   margin: 0 auto;
+  //z-index: auto;
 
   @include mq("pc") {
     width: calc(100% - 8rem);

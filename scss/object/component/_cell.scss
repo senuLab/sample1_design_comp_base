@@ -1,8 +1,6 @@
 .c-cell {
   &--th {
-    //width: 10rem;
     width: 29.2%;
-    //height: 5.6rem;
     padding: 0.5rem 0;
     vertical-align: middle;
     text-align: center;
@@ -14,11 +12,6 @@
     @include mq("pc") {
       padding: 1.6rem 0;
       width: 27.3%;
-      //height: 6.1rem;
-    }
-
-    &--first {
-      //border-top: 0.1rem solid #707070;
     }
 
     &--second {
@@ -26,7 +19,6 @@
     }
 
     &--last {
-      //border-bottom: 0.1rem solid #707070;
       border-top: 0.1rem solid $color-white;
     }
   }
@@ -34,8 +26,6 @@
   &--td {
     width: calc(100%-10rem);
     max-width: 69.8rem;
-    //height: 5.6rem;
-    //border: 0.1rem solid #707070;
     padding: 0.5em 0;
     padding-left: 2rem;
     vertical-align: middle;
@@ -43,7 +33,6 @@
 
     @include mq("pc") {
       width: calc(100%-26.2rem);
-      //height: 6.1rem;
     }
 
     &--second {
