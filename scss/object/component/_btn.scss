@@ -37,6 +37,7 @@
     background-color: #3e3e3e;
     color: $color-white;
     border: 0.1rem solid $color-white;
+    transition: all 0.3s;
 
     &:hover {
       background-color: $color-white;
