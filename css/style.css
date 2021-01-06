@@ -78,6 +78,10 @@ body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
 }
 
+.l-footer {
+  background-color: #3e3e3e;
+}
+
 .l-header {
   z-index: 5;
   position: fixed;
@@ -159,6 +163,11 @@ body {
   border-bottom: 0.1rem solid #707070;
 }
 
+.c-icon {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 3.6rem;
+}
+
 .c-img {
   width: 100%;
 }
@@ -168,10 +177,20 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.c-link--footer {
+  color: #ffffff;
+}
+
 .c-logo--header {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 2.3rem;
   line-height: 1.21739;
+  font-family: "Montserrat", sans-serif;
+}
+
+.c-logo--footer {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
 }
 
 .c-title {
@@ -297,6 +316,16 @@ body {
   max-width: 96rem;
   margin-bottom: 4rem;
   padding: 4rem 1.2rem;
+  border-radius: 0 0 1.2rem 1.2rem;
+  background-color: #ffffff;
+}
+
+.p-contact__form-item--gender {
+  margin-bottom: 3.2rem;
+}
+
+.p-contact__form-item--message {
+  margin-bottom: 3.2rem;
 }
 
 .p-contact__label {
@@ -364,20 +393,40 @@ body {
   padding: 1.6rem 5rem;
 }
 
-.p-form {
-  border-radius: 0 0 1.2rem 1.2rem;
-  background-color: #ffffff;
+.p-footer {
+  padding: 6rem 7.7rem 5.7rem;
+  text-align: center;
 }
 
-.p-form__item--gender {
-  margin-bottom: 3.2rem;
-  /* @include mq("pc") {
-        margin-bottom: 0;
-      } */
+.p-footer__wrap:not(:last-child) {
+  margin-right: auto;
 }
 
-.p-form__item--message {
-  margin-bottom: 3.2rem;
+.p-footer__icons {
+  margin-bottom: 4.2rem;
+}
+
+.p-footer__icon:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.p-footer__logo {
+  margin-bottom: 1.2rem;
+  color: #e3e3e3;
+}
+
+.p-footer__site-map {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.p-footer__link:not(:last-child) {
+  margin-bottom: 2.6rem;
+}
+
+.p-footer__copyright {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .p-header {
@@ -883,6 +932,9 @@ body {
     display: flex;
     align-items: center;
   }
+  .p-contact__form-item--message {
+    margin-bottom: 4rem;
+  }
   .p-contact__label {
     display: inline-block;
     margin-bottom: 0;
@@ -922,8 +974,28 @@ body {
   .p-contact__btn {
     margin: 0;
   }
-  .p-form__item--message {
+  .p-footer {
+    display: flex;
+    max-width: 96rem;
+    margin: 0 auto;
+    padding: 6rem 16rem;
+  }
+  .p-footer__icons {
     margin-bottom: 4rem;
+  }
+  .p-footer__icon:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+  .p-footer__logo {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+  }
+  .p-footer__link:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+  .p-footer__copyright {
+    font-size: 1.2rem;
+    text-align: right;
   }
   .p-header__logo {
     display: none;
