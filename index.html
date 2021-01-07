@@ -571,7 +571,7 @@
             ></textarea>
           </div>
           <div class="p-contact__form-item">
-            <label for="check" class="p-contact__label">
+            <label for="check" class="p-contact__label p-contact__label--lg">
               <input
                 type="checkbox"
                 class="p-contact__input--checkbox"
@@ -581,7 +581,7 @@
               個人情報保護方針に同意する
             </label>
           </div>
-          <button class="p-contact__btn c-btn--yellow">送信する</button>
+          <button class="p-contact__btn c-btn c-btn--yellow">送信する</button>
         </form>
       </div>
     </div>
@@ -592,17 +592,27 @@
       <div class="p-footer">
         <div class="p-footer__wrap">
           <div class="p-footer__icons">
-            <i class="p-footer__icon c-icon fab fa-twitter"></i>
-            <i class="p-footer__icon c-icon fab fa-facebook"></i>
+            <a class="p-footer__icon" href="#"
+              ><i class="c-icon fab fa-twitter"></i
+            ></a>
+            <a class="p-footer__icon" href="#"
+              ><i class="c-icon fab fa-facebook"></i
+            ></a>
           </div>
           <div class="p-footer__site-map">
-            <a href="#" class="p-footer__link c-link--footer">サイトマップ</a>
-            <a href="#" class="p-footer__link c-link--footer"
-              >個人情報保護方針</a
-            >
-            <a href="#" class="p-footer__link c-link--footer">
-              プライバシーポリシー
-            </a>
+            <div class="p-footer__map-item">
+              <a href="#" class="p-footer__link c-link--footer">サイトマップ</a>
+            </div>
+            <div class="p-footer__map-item">
+              <a href="#" class="p-footer__link c-link--footer"
+                >個人情報保護方針</a
+              >
+            </div>
+            <div class="p-footer__map-item">
+              <a href="#" class="p-footer__link c-link--footer">
+                プライバシーポリシー
+              </a>
+            </div>
           </div>
         </div>
         <div class="p-footer__wrap">
@@ -612,13 +622,6 @@
       </div>
     </footer>
     <!-- footer end -->
-
-    <!-- <div class="squares">
-      
-      <div class="square square--red">z-index:2</div>
-      <div class="square square--green">z-index:3
-        <div class="square square--blue">z-index:1</div>
-    </div> -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
