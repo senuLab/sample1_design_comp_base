@@ -52,7 +52,28 @@
     margin-bottom: 4rem;
   }
 
-  &__map-item {
+  //&__map-item {
+  /* &:not(:last-child) {
+    margin-bottom: 2.6rem;
+
+    @include mq("pc") {
+      margin-bottom: 2.4rem;
+      text-align: left;
+    } */
+  // }
+  //}
+
+  &__link {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 1.4rem;
+
+    @include mq("pc") {
+      margin: 0;
+      font-size: 1.6rem;
+    }
+
     &:not(:last-child) {
       margin-bottom: 2.6rem;
 
@@ -60,15 +81,6 @@
         margin-bottom: 2.4rem;
         text-align: left;
       }
-    }
-  }
-
-  &__link {
-    position: relative;
-    font-size: 1.4rem;
-
-    @include mq("pc") {
-      font-size: 1.6rem;
     }
 
     &::after {

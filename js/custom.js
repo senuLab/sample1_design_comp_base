@@ -31,5 +31,36 @@ $(function(){
             $(this).children("p").addClass("p-qa__question--close");
         }
     });
+
+    $('.p-header__nav-link').click(function () {
+
+        $('body').css('position', 'static');
+        $('body').css('overflow', 'scroll');
+        $('body').css('overflow-y', 'scroll');
+
+
+        let header = $(".l-header").innerHeight(); 
+        /* let speed = 300; */
+        let id = $(this).attr("href");
+        let position = $(id).offset().top - header;
+    
+        $('body,html').animate({
+          scrollTop: position
+        }, 500);
+        return false;
+      });
+
+      $('.p-to-top').click(function () {
+
+        let header = $(".l-header").innerHeight(); 
+        /* let speed = 300; */
+        let id = $(this).attr("href");
+        let position = $(id).offset().top - header;
+    
+        $('body,html').animate({
+          scrollTop: position
+        }, 500);
+        return false;
+      });
 });
 
