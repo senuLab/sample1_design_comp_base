@@ -1,3 +1,47 @@
 .l-footer {
   background-color: #3e3e3e;
 }
+
+.squares {
+  position: relative;
+  //z-index: 2;
+
+  padding: 50rem;
+  height: 100rem;
+  width: 100rem;
+}
+
+.z2 {
+  //z-index: 2;
+}
+
+.square {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+}
+
+.square--red {
+  z-index: 2;
+
+  color: white;
+  background-color: rgb(223, 11, 11);
+}
+
+.square--blue {
+  z-index: 1;
+
+  top: 2rem;
+  left: 2rem;
+  color: white;
+  background-color: rgb(15, 15, 199);
+}
+
+.square--green {
+  z-index: 3;
+
+  top: 52rem;
+  left: 52rem;
+  color: white;
+  background-color: rgb(11, 170, 11);
+}

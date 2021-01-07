@@ -6,7 +6,7 @@
 
 .js-hiraku-offcanvas-active {
   position: fixed;
-  /* z-index: 100001; */
+  z-index: 100001;
   top: 0;
   right: 0;
   bottom: 0;
@@ -22,7 +22,7 @@
 }
 
 .js-hiraku-offcanvas-body {
-  z-index: 10000;
+  z-index: 0;
   left: 0;
   width: 100%;
   transition: left 0.3s ease-in-out;
@@ -30,7 +30,8 @@
 
 .js-hiraku-offcanvas-body-right {
   position: fixed;
-  left: -70%;
+  /* left: -70%; */
+  left: -300px;
   overflow-y: hidden;
 }
 
@@ -47,13 +48,14 @@
 
 .js-hiraku-offcanvas-active .js-hiraku-offcanvas-sidebar {
   position: fixed;
-  /* z-index: 10002; */
+  z-index: 10002;
   top: 0;
   bottom: 0;
   display: block;
   overflow-y: scroll;
   box-sizing: border-box;
-  width: 70%;
+  /* width: 70%; */
+  width: 300px;
   max-width: 100%;
   background-color: #fff;
   -webkit-overflow-scrolling: touch;
@@ -66,14 +68,16 @@
 .js-hiraku-offcanvas-active .js-hiraku-offcanvas-sidebar-right {
   right: 0;
   left: auto;
-  margin-right: -70%;
+  /* margin-right: -70%; */
+  margin-right: -300px;
   transition: margin-right 0.3s ease-in-out;
 }
 
 .js-hiraku-offcanvas-active .js-hiraku-offcanvas-sidebar-left {
   right: auto;
   left: 0;
-  margin-left: -70%;
+  /* margin-left: -70%; */
+  margin-left: -300px;
   transition: margin-left 0.3s ease-in-out;
 }
 
@@ -101,23 +105,33 @@
 }
 
 .js-hiraku-offcanvas-body-right .js-hiraku-header-fixed {
-  margin-left: -70%;
+  /* margin-left: -70%; */
+  margin-left: -300px;
 }
 
 .js-hiraku-offcanvas-body-left .js-hiraku-header-fixed {
-  margin-left: 70%;
+  /* margin-left: 70%; */
+  margin-left: 300px;
 }
 
 .js-hiraku-offcanvas-close-btn {
-  position: absolute;
-  overflow: hidden;
+  margin-right: 316px;
+  margin-left: auto;
   clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+  width: 21px;
+  height: 21px;
+  /* margin: -1px; */
+  margin-top: 24px;
   padding: 0;
   border: 0;
+  background: transparent;
 }
+
+/* .js-hiraku-offcanvas-close-btn.active {
+  display: block;
+  margin-right: 316px;
+  transition: margin-right 0.3s ease-in-out;
+} */
 
 .hiraku-open-btn {
   left: 1.6rem;

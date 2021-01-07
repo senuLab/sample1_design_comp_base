@@ -42,6 +42,7 @@
     @include mq("pc") {
       font-size: 1.8rem;
       line-height: font-height(2.8rem, 1.8rem);
+      letter-spacing: font-space(0.045rem);
     }
   }
 
