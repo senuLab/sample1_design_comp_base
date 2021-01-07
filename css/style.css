@@ -82,6 +82,41 @@ body {
   background-color: #3e3e3e;
 }
 
+.squares {
+  position: relative;
+  width: 100rem;
+  height: 100rem;
+  padding: 50rem;
+}
+
+.square {
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+}
+
+.square--red {
+  z-index: 2;
+  background-color: #df0b0b;
+  color: white;
+}
+
+.square--blue {
+  z-index: 1;
+  top: 2rem;
+  left: 2rem;
+  background-color: #0f0fc7;
+  color: white;
+}
+
+.square--green {
+  z-index: 3;
+  top: 52rem;
+  left: 52rem;
+  background-color: #0baa0b;
+  color: white;
+}
+
 .l-header {
   z-index: 5;
   position: fixed;
@@ -101,6 +136,10 @@ body {
   border-radius: 1rem;
   background-color: #ffaa3b;
   color: #ffffff;
+}
+
+.c-btn--yellow:hover {
+  background-color: #f18900;
 }
 
 .c-btn--white {
@@ -460,7 +499,7 @@ body {
 
 .p-header__nav-link {
   margin-bottom: 3.2rem;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.22222;
   text-align: center;
@@ -488,6 +527,7 @@ body {
   width: 100%;
   padding: 1.4rem 1.6rem;
   border-bottom: 0.1rem solid #cecdcd;
+  transition: background-color 0.3s;
 }
 
 .p-inner--news:hover {
@@ -542,8 +582,10 @@ body {
 
 .p-news__date {
   margin-right: 2.4rem;
+  font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.42857;
+  letter-spacing: 0.00004rem;
 }
 
 .p-news__category {
@@ -590,6 +632,7 @@ body {
 
 .p-price__caution {
   font-size: 1.2rem;
+  line-height: 1.66667;
 }
 
 .p-qa {
@@ -746,9 +789,10 @@ body {
 
 .p-service__head {
   margin-bottom: 2rem;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 2rem;
   line-height: 1.2;
+  letter-spacing: 0.004em;
   text-align: center;
 }
 
@@ -1008,6 +1052,7 @@ body {
     margin-right: 4rem;
     font-size: 1.6rem;
     line-height: 1.1875;
+    letter-spacing: -0.00004rem;
   }
   .p-header__nav-link:last-child {
     margin-right: 0;
@@ -1170,6 +1215,10 @@ body {
     margin-right: 9rem;
     margin-bottom: 0;
   }
+  .p-service__head {
+    line-height: 1.4;
+    letter-spacing: 0.004em;
+  }
   .p-top {
     height: 64.8rem;
   }
@@ -1191,6 +1240,7 @@ body {
   .p-top__body {
     font-size: 1.8rem;
     line-height: 1.55556;
+    letter-spacing: 0.00004rem;
   }
   .p-top__btn {
     max-width: 28.2rem;

@@ -12,10 +12,11 @@ $(function(){
           },
     });
 
-    /* $hamburger = $(".js-header__hamburger-btn");
+    $hamburger_open = $(".js-header__hamburger-btn--open");
+    $hamburger_close = $(".js-header__hamburger-btn--close");
 
-    $hamburger.on("click",function(){
+    $hamburger_open.on("click",function(){
         $(".js-header__hamburger-btn--open").toggleClass("is-active");
-        $(".js-header__hamburger-btn--close").toggleClass("is-active");
-    }); */
+    }); 
 });
+

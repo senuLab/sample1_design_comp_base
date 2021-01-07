@@ -77,6 +77,8 @@
     margin-right: 2.4rem;
     font-size: 1.4rem;
     line-height: font-height(2rem, 1.4rem);
+    letter-spacing: font-space(0.035rem);
+    font-weight: 400;
 
     @include mq("pc") {
       margin-right: 4rem;
