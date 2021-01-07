@@ -18,5 +18,18 @@ $(function(){
     $hamburger_open.on("click",function(){
         $(".js-header__hamburger-btn--open").toggleClass("is-active");
     }); 
+
+    $(".p-qa__item").on("click",function(){
+        if($(this).children("p").hasClass("p-qa__question--close")){
+            $(this).children("div").slideDown();
+            $(this).children("p").removeClass("p-qa__question--close");
+            $(this).children("p").addClass("p-qa__question--open");
+        }
+        else {
+            $(this).children("div").slideUp();
+            $(this).children("p").removeClass("p-qa__question--open");
+            $(this).children("p").addClass("p-qa__question--close");
+        }
+    });
 });
 

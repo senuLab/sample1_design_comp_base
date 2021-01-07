@@ -322,8 +322,10 @@ body {
 }
 
 .p-comments__comment {
-  font-size: 1.405rem;
-  line-height: 1.42349;
+  /* font-size: 1.405rem;
+    line-height: font-height(2rem, 1.405rem); */
+  font-size: 1.4rem;
+  line-height: 1.42857;
 }
 
 .p-contact {
@@ -665,6 +667,7 @@ body {
   padding-left: 4rem;
   font-weight: bold;
   font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 .p-qa__question::before {
@@ -682,6 +685,7 @@ body {
   content: "Q";
   color: #ffffff;
   font-weight: 600;
+  font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -700,17 +704,17 @@ body {
 }
 
 .p-qa__answer-wrap {
+  display: none;
   margin-top: 1.6rem;
   padding: 1.2rem 1.2rem 0 1.2rem;
   background-color: #3b69ff33;
-}
+  /* &--open {
+      display: block;
+    }
 
-.p-qa__answer-wrap--open {
-  display: block;
-}
-
-.p-qa__answer-wrap--close {
-  display: none;
+    &--close {
+      display: none;
+    }  */
 }
 
 .p-results {
@@ -955,6 +959,10 @@ body {
     width: 44.5%;
     height: auto;
     margin: auto 0;
+  }
+  .p-comments__comment {
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
   .p-contact__top {
     margin: 6rem auto 0;
