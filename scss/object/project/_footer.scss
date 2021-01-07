@@ -4,8 +4,9 @@
 
   @include mq("pc") {
     display: flex;
-    padding: 6rem 16rem;
+    padding: 6rem 0;
     margin: 0 auto;
+    width: calc(100% - 8rem);
     max-width: 96rem;
   }
 
@@ -20,6 +21,7 @@
 
     @include mq("pc") {
       margin-bottom: 4rem;
+      text-align: left;
     }
   }
 
@@ -35,6 +37,7 @@
 
   &__logo {
     margin-bottom: 1.2rem;
+    font-size: 3.2rem;
     color: #e3e3e3;
 
     @include mq("pc") {
@@ -49,18 +52,47 @@
     margin-bottom: 4rem;
   }
 
-  &__link {
+  &__map-item {
     &:not(:last-child) {
       margin-bottom: 2.6rem;
 
       @include mq("pc") {
         margin-bottom: 2.4rem;
+        text-align: left;
       }
     }
   }
 
+  &__link {
+    position: relative;
+    font-size: 1.4rem;
+
+    @include mq("pc") {
+      font-size: 1.6rem;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: -0.55rem;
+      left: 50%;
+      content: "";
+      width: 0;
+      height: 1px;
+      background-color: #ffffff;
+      transition: all 0.3s;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
   &__copyright {
-    color: rgba(#ffffff, 0.6);
+    font-family: $font-family-montserrat;
+    font-weight: 400;
+    color: rgba(#ffffff, 0.4);
 
     @include mq("pc") {
       text-align: right;

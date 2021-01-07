@@ -84,7 +84,9 @@
     padding-left: 0;
     width: 100%;
     font-size: 1.8rem;
+    font-family: $font-family-montserrat;
     font-weight: 600;
+    letter-spacing: font-space(0.18rem);
 
     @include mq("pc") {
       grid-row: 2 / 3;
