@@ -105,7 +105,14 @@
   }
 
   &__comment {
-    font-size: 1.405rem;
-    line-height: font-height(2rem, 1.405rem);
+    /* font-size: 1.405rem;
+    line-height: font-height(2rem, 1.405rem); */
+    font-size: 1.4rem;
+    line-height: font-height(2rem, 1.4rem);
+
+    @include mq("pc") {
+      font-size: 1.6rem;
+      line-height: font-height(2.4rem, 1.6rem);
+    }
   }
 }
