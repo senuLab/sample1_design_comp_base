@@ -1,4 +1,10 @@
 .c-icon {
   font-size: 3.6rem;
   color: rgba(#ffffff, 0.6);
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.3);
+    color: rgba(rgb(179, 218, 255), 0.6);
+  }
 }
