@@ -3,7 +3,7 @@
   background-color: #f3f3f3;
 
   @include mq("pc") {
-    height: 96.9rem;
+    height: 75.4rem;
   }
 
   &__wrap {
@@ -80,6 +80,7 @@
 
     @include mq("pc") {
       margin-top: 4rem;
+      text-align: left;
     }
   }
 }

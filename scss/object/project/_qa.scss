@@ -1,8 +1,8 @@
 .p-qa {
   overflow: hidden;
   width: 100%;
-  background: transparent url(./../../../img/qa-bg@.png) no-repeat center center /
-    cover;
+  background: transparent url(./../../../image/qa-bg@.png) no-repeat center
+    center / cover;
 
   &__title {
     margin: 4rem 0;
@@ -66,12 +66,12 @@
     }
 
     &--open {
-      background: transparent url(./../../../img/minus.svg) no-repeat center
+      background: transparent url(./../../../image/minus.svg) no-repeat center
         right;
     }
 
     &--close {
-      background: transparent url(./../../../img/plus.svg) no-repeat center
+      background: transparent url(./../../../image/plus.svg) no-repeat center
         right;
     }
   }
@@ -97,6 +97,10 @@
     @include mq("pc") {
       padding: 1.6rem 1.6rem 0 1.6rem;
       margin-top: 2rem;
+    }
+
+    &--open {
+      display: block;
     }
   }
 }
