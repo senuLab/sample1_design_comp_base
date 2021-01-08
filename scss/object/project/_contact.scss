@@ -63,15 +63,21 @@
       }
     }
 
-    &--gender {
+    &-gender {
       margin-bottom: 3.2rem;
     }
 
-    &--message {
+    &-message {
       margin-bottom: 3.2rem;
 
       @include mq("pc") {
         margin-bottom: 4rem;
+      }
+    }
+
+    &-check {
+      @include mq("pc") {
+        margin-bottom: 4.1rem;
       }
     }
   }
@@ -84,19 +90,42 @@
     @include mq("pc") {
       display: inline-block;
       margin-bottom: 0;
-      //padding-right: 4rem;
 
       &:not(:last-child) {
         width: 16.8rem;
       }
     }
 
-    &--radio {
+    &-radio {
       display: inline-block;
       margin-right: 4rem;
+      cursor: pointer;
+      position: relative;
+      padding-left: 2rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        display: block;
+        width: 1.2rem;
+        height: 1.2rem;
+        background-color: #ffffff;
+        border: 0.1rem solid #707070;
+        border-radius: 50%;
+        box-sizing: border-box;
+      }
+
+      &:hover {
+        &::before {
+          border: 0.1rem solid #3b69ff;
+        }
+      }
     }
 
-    &--message {
+    &-message {
       @include mq("pc") {
         margin-bottom: 0.8rem;
       }
@@ -129,9 +158,32 @@
       }
     }
 
-    &--lg {
+    &-checkbox {
+      position: relative;
+      padding-left: 3.8rem;
+      cursor: pointer;
+
       @include mq("pc") {
         font-size: 1.8rem;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid #707070;
+        box-sizing: border-box;
+      }
+
+      &:hover {
+        &:before {
+          border: 1px solid #3b69ff;
+        }
       }
     }
   }
@@ -142,6 +194,7 @@
     width: 100%;
     outline: none;
     border-bottom: 0.1rem solid rgba(#3e3e3e, 0.5);
+    cursor: pointer;
 
     @include mq("pc") {
       margin-bottom: 0;
@@ -155,9 +208,8 @@
       }
     }
 
-    &--select {
+    &-select {
       height: 3.8rem;
-      padding-left: 1.2rem;
       border: none;
       border: 0.1rem solid rgba(#3e3e3e, 0.5);
 
@@ -165,13 +217,31 @@
         max-width: 17.8rem;
         min-height: 4rem;
       }
+
+      &:hover {
+        box-shadow: 0 0 0.5rem #4973ff80;
+      }
     }
 
-    &--radio {
-      display: inline-block;
+    &-radio {
+      display: none;
+
+      &:checked + .p-contact__label-radio::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0.3rem;
+        transform: translateY(-50%);
+        width: 0.6rem;
+        height: 0.6rem;
+        background: #3b69ff;
+        border-radius: 50%;
+        box-sizing: border-box;
+      }
     }
 
-    &--textarea {
+    &-textarea {
       max-width: 100%;
       min-height: 16rem;
 
@@ -181,9 +251,43 @@
       }
     }
 
-    &--checkbox {
-      display: inline-block;
-      background-color: white;
+    &-checkbox {
+      display: none;
+
+      &:checked + .p-contact__checkbox-part::after {
+        content: "";
+        position: absolute;
+        bottom: 0.7rem;
+        left: 0.2rem;
+        transform: rotate(-45deg);
+        width: 1.6rem;
+        height: 0.8rem;
+        border-bottom: 0.2rem solid #3b69ff;
+        border-left: 0.2rem solid #3b69ff;
+        box-sizing: border-box;
+      }
+    }
+
+    &--hover-border {
+      &:hover {
+        border: 0.1rem solid #4973ff;
+      }
+
+      &:focus {
+        border: 0.1rem solid #4973ff;
+      }
+    }
+
+    &--hover-border-bottom {
+      &:hover {
+        border-bottom: 0.1rem solid #4973ff;
+        box-shadow: 0 0.5rem 0.5rem 0.5rem #4973ff;
+      }
+
+      &:focus {
+        border-bottom: 0.1rem solid #4973ff;
+        box-shadow: 0 0.5rem 0.5rem 0.5rem #4973ff;
+      }
     }
   }
 

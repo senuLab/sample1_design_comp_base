@@ -509,7 +509,7 @@
             <label class="p-contact__label">お問い合わせ種別 </label>
             <select
               name="kind"
-              class="p-contact__input p-contact__input--select"
+              class="p-contact__input p-contact__input-select"
             >
               <option value="" hidden>選択してください</option>
               <option value="質問">質問</option>
@@ -522,7 +522,7 @@
             </label>
             <input
               type="text"
-              class="p-contact__input"
+              class="p-contact__input p-contact__input-name p-contact__input--required p-contact__input--hover-border-bottom"
               placeholder="氏名"
               required
             />
@@ -533,7 +533,7 @@
             </label>
             <input
               type="text"
-              class="p-contact__input"
+              class="p-contact__input p-contact__input-kana p-contact__input--required p-contact__input--hover-border-bottom"
               placeholder="フリガナ"
               required
             />
@@ -542,49 +542,58 @@
             <label class="p-contact__label">メールアドレス</label>
             <input
               type="email"
-              class="p-contact__input"
+              class="p-contact__input p-contact__input--hover-border-bottom"
               placeholder="sample@gmail.com"
             />
           </div>
-          <div class="p-contact__form-item p-contact__form-item--gender">
+          <div class="p-contact__form-item p-contact__form-item-gender">
             <label class="p-contact__label">性別</label>
-            <label for="man" class="p-contact__label--radio">
-              <input
-                type="radio"
-                class="p-contact__input--radio"
-                id="man"
-                checked
-              />男性
-            </label>
-            <label for="woman" class="p-contact__label--radio">
-              <input
-                type="radio"
-                class="p-contact__input--radio"
-                id="woman"
-              />女性
-            </label>
+
+            <input
+              type="radio"
+              name="gender"
+              class="p-contact__input-radio"
+              id="man"
+              checked
+            />
+            <label for="man" class="p-contact__label-radio">男性 </label>
+
+            <input
+              type="radio"
+              name="gender"
+              class="p-contact__input-radio"
+              id="woman"
+            />
+            <label for="woman" class="p-contact__label-radio">女性 </label>
           </div>
-          <div class="p-contact__form-item p-contact__form-item--message">
-            <label class="p-contact__label p-contact__label--message"
+          <div class="p-contact__form-item p-contact__form-item-message">
+            <label class="p-contact__label p-contact__label-message"
               >メッセージ</label
             >
             <textarea
               type="text"
-              class="p-contact__input p-contact__input--textarea"
+              class="p-contact__input p-contact__input-textarea p-contact__input--hover-border"
             ></textarea>
           </div>
-          <div class="p-contact__form-item">
-            <label for="check" class="p-contact__label p-contact__label--lg">
+          <div class="p-contact__form-item p-contact__form-item-check">
+            <label
+              for="check"
+              class="p-contact__label p-contact__label-checkbox"
+            >
               <input
                 type="checkbox"
-                class="p-contact__input--checkbox"
+                class="p-contact__input-checkbox p-contact__input--required"
                 id="check"
-                checked
+                required
               />
-              個人情報保護方針に同意する
+              <span class="p-contact__checkbox-part">
+                個人情報保護方針に同意する</span
+              >
             </label>
           </div>
-          <button class="p-contact__btn c-btn c-btn--yellow">送信する</button>
+          <button class="p-contact__btn c-btn c-btn--disabled" disabled>
+            送信する
+          </button>
         </form>
       </div>
     </div>
@@ -627,7 +636,8 @@
     <!-- footer end -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <script src="./js/swiper.min.js"></script>
   <script src="./js/hiraku.min.js"></script>
   <script src="./js/custom.js"></script>
 </html>

@@ -5,6 +5,16 @@ $(function(){
     });
 
     var mySwiper = new Swiper ('.swiper-container', {
+        width:400,
+        spaceBetween:40,
+
+        breakpoints:{
+            767:{
+                width:274,
+                spaceBetween:24,
+            }
+        },
+
         pagination: { 
             el: '.swiper-pagination', //ページネーションの要素
             type: 'bullets', //ページネーションの種類
@@ -62,5 +72,27 @@ $(function(){
         }, 500);
         return false;
       });
+
+      let $input = $(".p-contact__input--required");
+      let $button = $(".p-contact__btn");
+
+    $input.on("change",function(){
+
+        if($(".p-contact__input-name").val() !== "" &&
+        $(".p-contact__input-kana").val() !== "" &&
+        $(".p-contact__input-checkbox").prop("checked") === true
+        ){
+          $button.prop("disabled",false);
+          $button.addClass("c-btn--yellow");
+          $button.removeClass("c-btn--disabled");
+        }
+        else{
+          $button.prop("disabled",true);
+          $button.removeClass("c-btn--yellow");
+          $button.addClass("c-btn--disabled");
+        }
+      
+    });
+
 });
 

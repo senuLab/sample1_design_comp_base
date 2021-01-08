@@ -10,9 +10,15 @@
 
   @include mq("pc") {
     position: relative;
-    height: 40rem;
+    height: 61.5rem;
     background: none;
-    background-color: #3e3e3e;
+    background: linear-gradient(
+      to bottom,
+      #3e3e3e 0%,
+      #3e3e3e 65%,
+      #f3f3f3 65%,
+      #f3f3f3 100%
+    );
   }
 
   &__title {
