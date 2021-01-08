@@ -28,6 +28,7 @@
     padding: 2rem 1.6rem 1.6rem 1.6rem;
     background-color: $color-white;
     border-radius: 0.4rem;
+    cursor: pointer;
 
     &:not(:last-child) {
       margin-bottom: 2.4rem;
@@ -97,13 +98,5 @@
       padding: 1.6rem 1.6rem 0 1.6rem;
       margin-top: 2rem;
     }
-
-    /* &--open {
-      display: block;
-    }
-
-    &--close {
-      display: none;
-    }  */
   }
 }

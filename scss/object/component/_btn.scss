@@ -47,4 +47,14 @@
       color: #3e3e3e;
     }
   }
+
+  &--disabled {
+    background-color: #b2b2b2;
+    border-radius: 1rem;
+    color: $color-white;
+
+    @include mq("pc") {
+      font-size: 1.8rem;
+    }
+  }
 }

@@ -6,6 +6,7 @@
 
   @include mq("pc") {
     width: calc(100% - 8rem);
+    max-width: 120rem;
   }
 
   &--news {

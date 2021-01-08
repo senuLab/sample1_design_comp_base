@@ -12,7 +12,7 @@
     background-color: #3e3e3e;
 
     @include mq("pc") {
-      margin-top: 21.5rem;
+      //margin-top: 21.5rem;
       margin-left: 4rem;
       padding-left: 6rem;
       height: 75.4rem;
@@ -22,6 +22,19 @@
   &__title {
     color: $color-white;
     padding: 4rem 0;
+
+    @include mq("pc") {
+      padding: 6rem 0;
+      text-align: left;
+    }
+  }
+
+  &__img {
+    height: 17.1rem;
+
+    @include mq("pc") {
+      height: 25rem;
+    }
   }
 
   &__head {
@@ -33,7 +46,7 @@
     @include mq("pc") {
       padding-bottom: 1.6rem;
       font-size: 2rem;
-      line-height: font-height(2.4rem, 1.4rem);
+      line-height: font-height(2.4rem, 2rem);
     }
   }
 
@@ -48,7 +61,7 @@
   }
 
   &__btn {
-    margin-top: 2.8rem;
+    margin-top: 2.4rem;
     margin-left: 1rem;
     width: 31.6rem;
     font-size: 1.8rem;
@@ -57,21 +70,16 @@
 
     @include mq("pc") {
       width: 28.9rem;
-    }
-  }
-
-  &__slide {
-    /* width: 29.4rem !important;
-    height: 25.3rem !important; */
-    margin-left: 0;
-
-    @include mq("pc") {
-      /* width: 44rem !important;
-      height: 36.6rem !important; */
+      margin-top: 4rem;
     }
   }
 
   &__page {
-    margin-top: 4rem;
+    margin-top: 2.4rem;
+    height: 2rem;
+
+    @include mq("pc") {
+      margin-top: 4rem;
+    }
   }
 }
