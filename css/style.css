@@ -309,7 +309,7 @@ body {
 .p-contact {
   width: 100%;
   overflow: hidden;
-  background: transparent url(./../../../image/contact-bg@.png) no-repeat center center/cover;
+  background: transparent url(./../img/contact-bg@.png) no-repeat center center/cover;
 }
 
 .p-contact__top {
@@ -318,7 +318,7 @@ body {
   margin-top: 4rem;
   padding: 4rem 1.6rem;
   border-radius: 1.2rem 1.2rem 0 0;
-  background: transparent url(./../../../image/contact1@.png) no-repeat center center/cover;
+  background: transparent url(./../img/contact1@.png) no-repeat center center/cover;
 }
 
 .p-contact__title {
@@ -706,7 +706,7 @@ body {
 }
 
 .p-news__item {
-  background: transparent url(./../../../img/news-arrow.svg) no-repeat center right 1.6rem;
+  background: transparent url(./../img/news-arrow.svg) no-repeat center right 1.6rem;
   transition: background-color 0.3s;
 }
 
@@ -774,7 +774,7 @@ body {
 .p-qa {
   width: 100%;
   overflow: hidden;
-  background: transparent url(./../../../image/qa-bg@.png) no-repeat center center/cover;
+  background: transparent url(./../img/qa-bg@.png) no-repeat center center/cover;
 }
 
 .p-qa__title {
@@ -825,11 +825,11 @@ body {
 }
 
 .p-qa__question--open {
-  background: transparent url(./../../../image/minus.svg) no-repeat center right;
+  background: transparent url(./../img/minus.svg) no-repeat center right;
 }
 
 .p-qa__question--close {
-  background: transparent url(./../../../image/plus.svg) no-repeat center right;
+  background: transparent url(./../img/plus.svg) no-repeat center right;
 }
 
 .p-qa__answer {
@@ -954,7 +954,7 @@ body {
 
 .p-top {
   height: 66.7rem;
-  background: url(./../../../image/mv@.png) no-repeat left 22% center/cover;
+  background: url(./../img/top.png) no-repeat left 22% center/cover;
 }
 
 .p-top__head {
