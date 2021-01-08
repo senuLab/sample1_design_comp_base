@@ -4,13 +4,12 @@
 
   @include mq("pc") {
     position: relative;
-    //z-index: -2;
     height: 76rem;
     background: linear-gradient(
-      to bottom,
-      #3e3e3e 0%,
-      #3e3e3e 66.3%,
-      #f3f3f3 66.3%,
+      to right,
+      transparent 0%,
+      transparent 76.6%,
+      #f3f3f3 76.6%,
       #f3f3f3 100%
     );
 
@@ -24,10 +23,10 @@
       width: 100%;
       height: 100%;
       background: linear-gradient(
-        to right,
-        transparent 0%,
-        transparent 81.7%,
-        #f3f3f3 81.7%,
+        to bottom,
+        #3e3e3e 0%,
+        #3e3e3e 66.3%,
+        #f3f3f3 66.3%,
         #f3f3f3 100%
       );
     }
@@ -79,14 +78,14 @@
   }
 
   &__btn {
-    margin-bottom: 12rem;
+    margin-bottom: 6rem;
     padding-right: 0;
     padding-left: 0;
     width: 100%;
     font-size: 1.8rem;
     font-family: $font-family-montserrat;
     font-weight: 600;
-    letter-spacing: font-space(0.18rem);
+    letter-spacing: font-space(100em);
 
     @include mq("pc") {
       grid-row: 2 / 3;
@@ -96,6 +95,7 @@
       margin-top: 3.2rem;
       margin-right: 10rem;
       font-size: 2rem;
+      letter-spacing: font-space(100em);
     }
   }
 }
