@@ -1,6 +1,5 @@
 .p-news {
   position: relative;
-  //height: auto;
   height: 57.4rem;
   background-color: #f3f3f3;
 
@@ -119,8 +118,11 @@
 
   &__btn {
     margin: 4rem auto;
+    width: 26.8rem;
+    letter-spacing: font-space(270em);
 
     @include mq("pc") {
+      width: 23.6rem;
       letter-spacing: font-space(270em);
     }
   }

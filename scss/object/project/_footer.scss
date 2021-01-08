@@ -30,7 +30,7 @@
       margin-right: 5rem;
 
       @include mq("pc") {
-        margin-right: 3.2rem;
+        margin-right: 2.8rem;
       }
     }
   }
@@ -51,17 +51,6 @@
     flex-direction: column;
     margin-bottom: 4rem;
   }
-
-  //&__map-item {
-  /* &:not(:last-child) {
-    margin-bottom: 2.6rem;
-
-    @include mq("pc") {
-      margin-bottom: 2.4rem;
-      text-align: left;
-    } */
-  // }
-  //}
 
   &__link {
     position: relative;
@@ -103,12 +92,12 @@
 
   &__copyright {
     font-family: $font-family-montserrat;
+    font-size: 1.2rem;
     font-weight: 400;
     color: rgba(#ffffff, 0.4);
 
     @include mq("pc") {
       text-align: right;
-      font-size: 1.2rem;
     }
   }
 }

@@ -1,5 +1,5 @@
 .c-btn {
-  padding: 1.6rem 5rem;
+  padding: 1.6rem 0;
   box-shadow: 0 0.3rem 0.5rem #3e3e3e33;
   cursor: pointer;
   transition: all 0.3s;
@@ -19,7 +19,7 @@
   }
 
   &--white {
-    padding: 1.6rem 10rem;
+    padding: 1.6rem 0;
     background-color: $color-white;
     color: #3e3e3e;
     border: 0.1rem solid #707070;
@@ -37,7 +37,7 @@
   }
 
   &--black {
-    padding: 1.6rem 10rem;
+    padding: 1.6rem 0;
     background-color: #3e3e3e;
     color: $color-white;
     border: 0.1rem solid $color-white;

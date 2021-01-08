@@ -1,10 +1,10 @@
-.u-pc-none {
+.u-display--pc-none {
   @include mq("pc") {
     display: none;
   }
 }
 
-.u-sp-none {
+.u-display--sp-none {
   @include mq("sp") {
     display: none;
   }

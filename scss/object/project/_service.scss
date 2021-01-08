@@ -1,10 +1,10 @@
 .p-service {
-  height: 87.8rem;
+  height: 87rem;
   background: linear-gradient(
     to bottom,
     #3e3e3e 0%,
-    #3e3e3e 50%,
-    #f3f3f3 50%,
+    #3e3e3e 55%,
+    #f3f3f3 55%,
     #f3f3f3 100%
   );
 
@@ -51,7 +51,7 @@
 
   &__item {
     &:not(:last-child) {
-      margin-bottom: 5.6rem;
+      margin-bottom: 4.5rem;
 
       @include mq("pc") {
         margin-right: 9rem;
@@ -72,7 +72,7 @@
     font-weight: 600;
     font-size: 2rem;
     line-height: font-height(2.4rem, 2rem);
-    letter-spacing: font-space(4em);
+    letter-spacing: font-space(200em);
 
     @include mq("pc") {
       line-height: font-height(2.8rem, 2rem);

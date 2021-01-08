@@ -1,6 +1,5 @@
 .p-comments {
   overflow: hidden;
-  //height: 48.55rem;
   background: linear-gradient(
     to bottom,
     #f3f3f3 0%,
@@ -12,12 +11,12 @@
   @include mq("pc") {
     position: relative;
     z-index: 0;
-    //height: 69.6rem;
+    height: 72.4rem;
     background: linear-gradient(
       to bottom,
       #f3f3f3 0%,
-      #f3f3f3 14.1%,
-      #3e3e3e 14.1%,
+      #f3f3f3 20.1%,
+      #3e3e3e 20.1%,
       #3e3e3e 100%
     );
 
@@ -45,7 +44,7 @@
     background-color: #ffffff;
     width: 100%;
     height: auto;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     box-shadow: 0 0.5rem 1.2rem #3e3e3e33;
 
     @include mq("pc") {
@@ -67,6 +66,10 @@
   &__title {
     margin-bottom: 4rem;
     text-align: left;
+
+    @include mq("pc") {
+      margin-bottom: 6rem;
+    }
   }
 
   &__item {
@@ -76,7 +79,7 @@
       margin-bottom: 4rem;
 
       @include mq("pc") {
-        margin-bottom: 7.2rem;
+        margin-bottom: 6rem;
       }
     }
   }
@@ -85,10 +88,12 @@
     width: 6rem;
     height: 6rem;
     margin-right: 2rem;
+    line-height: font-height(2.4rem, 1.6rem);
 
     @include mq("pc") {
       width: 10rem;
       height: 10rem;
+      margin-right: 3.2rem;
     }
 
     &--pc {
@@ -105,8 +110,6 @@
   }
 
   &__comment {
-    /* font-size: 1.405rem;
-    line-height: font-height(2rem, 1.405rem); */
     font-size: 1.4rem;
     line-height: font-height(2rem, 1.4rem);
 
