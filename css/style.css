@@ -429,14 +429,19 @@ body {
 .p-contact__input {
   display: block;
   width: 100%;
-  margin-bottom: 3.2rem;
   border-bottom: 0.1rem solid rgba(62, 62, 62, 0.5);
   outline: none;
   cursor: pointer;
 }
 
+.p-contact__input-wrap {
+  width: 100%;
+  margin-bottom: 3.2rem;
+}
+
 .p-contact__input-select {
   height: 3.8rem;
+  padding-left: 1rem !important;
   border: none;
   border: 0.1rem solid rgba(62, 62, 62, 0.5);
 }
@@ -495,12 +500,10 @@ body {
 
 .p-contact__input--hover-border-bottom:hover {
   border-bottom: 0.1rem solid #4973ff;
-  box-shadow: 0 0.5rem 0.5rem 0.5rem #4973ff;
 }
 
 .p-contact__input--hover-border-bottom:focus {
   border-bottom: 0.1rem solid #4973ff;
-  box-shadow: 0 0.5rem 0.5rem 0.5rem #4973ff;
 }
 
 .p-contact__btn {
@@ -1146,18 +1149,12 @@ body {
     font-size: 1.8rem;
   }
   .p-contact__input {
+    padding-left: 1.2rem;
+  }
+  .p-contact__input-wrap {
     flex: 1;
     width: auto;
     margin-bottom: 0;
-  }
-  .p-contact__input::-moz-placeholder {
-    padding-left: 1.2rem;
-  }
-  .p-contact__input:-ms-input-placeholder {
-    padding-left: 1.2rem;
-  }
-  .p-contact__input::placeholder {
-    padding-left: 1.2rem;
   }
   .p-contact__input-select {
     max-width: 17.8rem;
@@ -1403,7 +1400,7 @@ body {
     padding-bottom: 15.3rem;
   }
   .p-top__head {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     padding: 0;
     font-size: 3.2rem;
     line-height: 1.5;
@@ -1411,7 +1408,7 @@ body {
   .p-top__body {
     font-size: 1.8rem;
     line-height: 1.55556;
-    letter-spacing: 0.00004rem;
+    letter-spacing: 0.045rem;
   }
   .p-top__btn {
     max-width: 28.2rem;
