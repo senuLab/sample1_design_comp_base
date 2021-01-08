@@ -309,7 +309,7 @@ body {
 .p-contact {
   width: 100%;
   overflow: hidden;
-  background: transparent url(./../../../img/contact-bg@.png) no-repeat center center/cover;
+  background: transparent url(./../../../image/contact-bg@.png) no-repeat center center/cover;
 }
 
 .p-contact__top {
@@ -318,7 +318,7 @@ body {
   margin-top: 4rem;
   padding: 4rem 1.6rem;
   border-radius: 1.2rem 1.2rem 0 0;
-  background: transparent url(./../../../img/contact1@.png) no-repeat center center/cover;
+  background: transparent url(./../../../image/contact1@.png) no-repeat center center/cover;
 }
 
 .p-contact__title {
@@ -774,7 +774,7 @@ body {
 .p-qa {
   width: 100%;
   overflow: hidden;
-  background: transparent url(./../../../img/qa-bg@.png) no-repeat center center/cover;
+  background: transparent url(./../../../image/qa-bg@.png) no-repeat center center/cover;
 }
 
 .p-qa__title {
@@ -825,11 +825,11 @@ body {
 }
 
 .p-qa__question--open {
-  background: transparent url(./../../../img/minus.svg) no-repeat center right;
+  background: transparent url(./../../../image/minus.svg) no-repeat center right;
 }
 
 .p-qa__question--close {
-  background: transparent url(./../../../img/plus.svg) no-repeat center right;
+  background: transparent url(./../../../image/plus.svg) no-repeat center right;
 }
 
 .p-qa__answer {
@@ -843,6 +843,10 @@ body {
   margin-top: 1.6rem;
   padding: 1.2rem 1.2rem 0 1.2rem;
   background-color: #3b69ff33;
+}
+
+.p-qa__answer-wrap--open {
+  display: block;
 }
 
 .p-results {
@@ -914,12 +918,13 @@ body {
 }
 
 .p-service__img {
-  width: 6.4rem;
+  width: 5rem;
+  height: 6rem;
   margin: 0 auto 0.8rem;
 }
 
 .p-service__head {
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.2;
@@ -949,7 +954,7 @@ body {
 
 .p-top {
   height: 66.7rem;
-  background: url(./../../../img/mv@.png) no-repeat left 22% center/cover;
+  background: url(./../../../image/mv@.png) no-repeat left 22% center/cover;
 }
 
 .p-top__head {
@@ -1208,7 +1213,7 @@ body {
     margin-right: 4rem;
     font-size: 1.6rem;
     line-height: 1.1875;
-    letter-spacing: -0.00004rem;
+    letter-spacing: -0.058em;
   }
   .p-header__nav-link:last-child {
     margin-right: 0;
@@ -1221,7 +1226,7 @@ body {
     width: calc(100% - 12rem);
     margin: 0 6rem;
     padding: 0;
-    padding: 3.5rem 0;
+    padding: 3.75rem 0;
   }
   .p-inner--service {
     max-width: 96rem;
@@ -1274,16 +1279,23 @@ body {
     margin-right: 4rem;
     font-size: 1.8rem;
     line-height: 1.44444;
+    letter-spacing: 0.03em;
   }
   .p-news__category {
     margin-right: 3.2rem;
-    padding: 0.8rem 3.2rem;
+    padding: 0.8rem 3rem;
     font-size: 1.4rem;
+    line-height: 1;
+    letter-spacing: 0.01em;
   }
   .p-news__content {
     margin-right: 8.3rem;
     font-size: 1.8rem;
     line-height: 1.55556;
+    letter-spacing: 0.03em;
+  }
+  .p-news__btn {
+    letter-spacing: 0.27em;
   }
   .p-price {
     height: 54.9rem;
@@ -1325,7 +1337,7 @@ body {
     padding: 1.6rem 1.6rem 0 1.6rem;
   }
   .p-results {
-    height: 96.9rem;
+    height: 75.4rem;
   }
   .p-results__wrap {
     height: 75.4rem;
@@ -1354,6 +1366,7 @@ body {
   }
   .p-results__page {
     margin-top: 4rem;
+    text-align: left;
   }
   .p-service {
     position: relative;
@@ -1371,7 +1384,7 @@ body {
     width: calc(100% - 8rem);
     max-width: 96rem;
     margin: 0 4rem;
-    padding: 4.5rem 6rem;
+    padding: 6.5rem 4.5rem 6rem;
     transform: translateX(calc(-1 * (50% + 4rem)));
   }
   .p-service__item:not(:last-child) {
@@ -1380,7 +1393,7 @@ body {
   }
   .p-service__head {
     line-height: 1.4;
-    letter-spacing: 0.004em;
+    letter-spacing: 0.2em;
   }
   .p-to-top {
     right: 3rem;
@@ -1408,7 +1421,7 @@ body {
   .p-top__body {
     font-size: 1.8rem;
     line-height: 1.55556;
-    letter-spacing: 0.045rem;
+    letter-spacing: 0.03em;
   }
   .p-top__btn {
     max-width: 28.2rem;

@@ -1,5 +1,5 @@
 .p-top {
-  background: url(./../../../img/mv@.png) no-repeat left 22% center / cover;
+  background: url(./../../../image/mv@.png) no-repeat left 22% center / cover;
   height: 66.7rem;
 
   @include mq("pc") {
@@ -42,7 +42,7 @@
     @include mq("pc") {
       font-size: 1.8rem;
       line-height: font-height(2.8rem, 1.8rem);
-      letter-spacing: font-space(45rem);
+      letter-spacing: font-space(30em);
     }
   }
 

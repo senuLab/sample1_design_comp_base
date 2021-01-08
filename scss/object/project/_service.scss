@@ -44,7 +44,7 @@
       width: calc(100% - 8rem);
       transform: translateX(calc(-1 * (50% + 4rem)));
       max-width: 96rem;
-      padding: 4.5rem 6rem;
+      padding: 6.5rem 4.5rem 6rem;
       margin: 0 4rem;
     }
   }
@@ -61,12 +61,13 @@
   }
 
   &__img {
-    width: 6.4rem;
+    width: 5rem;
+    height: 6rem;
     margin: 0 auto 0.8rem;
   }
 
   &__head {
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
     text-align: center;
     font-weight: 600;
     font-size: 2rem;
@@ -75,7 +76,7 @@
 
     @include mq("pc") {
       line-height: font-height(2.8rem, 2rem);
-      letter-spacing: font-space(4em);
+      letter-spacing: font-space(200em);
     }
   }
 

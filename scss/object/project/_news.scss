@@ -84,6 +84,7 @@
       margin-right: 4rem;
       font-size: 1.8rem;
       line-height: font-height(2.6rem, 1.8rem);
+      letter-spacing: font-space(30em);
     }
   }
 
@@ -94,9 +95,11 @@
     font-size: 1.2rem;
 
     @include mq("pc") {
-      padding: 0.8rem 3.2rem;
+      padding: 0.8rem 3rem;
       margin-right: 3.2rem;
       font-size: 1.4rem;
+      line-height: font-height(1.4rem, 1.4rem);
+      letter-spacing: font-space(10em);
     }
   }
 
@@ -110,10 +113,15 @@
       margin-right: 8.3rem;
       font-size: 1.8rem;
       line-height: font-height(2.8rem, 1.8rem);
+      letter-spacing: font-space(30em);
     }
   }
 
   &__btn {
     margin: 4rem auto;
+
+    @include mq("pc") {
+      letter-spacing: font-space(270em);
+    }
   }
 }
