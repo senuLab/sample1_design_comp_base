@@ -1,8 +1,8 @@
 .p-qa {
   overflow: hidden;
   width: 100%;
-  background: transparent url(./../../../image/qa-bg@.png) no-repeat center
-    center / cover;
+  background: transparent url(./../img/qa-bg@.png) no-repeat center center /
+    cover;
 
   &__title {
     margin: 4rem 0;
@@ -66,13 +66,11 @@
     }
 
     &--open {
-      background: transparent url(./../../../image/minus.svg) no-repeat center
-        right;
+      background: transparent url(./../img/minus.svg) no-repeat center right;
     }
 
     &--close {
-      background: transparent url(./../../../image/plus.svg) no-repeat center
-        right;
+      background: transparent url(./../img/plus.svg) no-repeat center right;
     }
   }
 

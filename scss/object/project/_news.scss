@@ -53,8 +53,8 @@
   }
 
   &__item {
-    background: transparent url(./../../../img/news-arrow.svg) no-repeat center
-      right 1.6rem;
+    background: transparent url(./../img/news-arrow.svg) no-repeat center right
+      1.6rem;
     transition: background-color 0.3s;
 
     @include mq("pc") {
