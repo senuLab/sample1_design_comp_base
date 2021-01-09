@@ -13,7 +13,6 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/hiraku.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Sample1</title>
@@ -48,57 +47,44 @@
                 Contact
               </a>
             </nav>
-            <button
-              class="hiraku-open-btn u-display--pc-none p-header__hamburger"
-              id="offcanvas-btn-right"
-              data-toggle-offcanvas="#js-hiraku-offcanvas-1"
-            >
-              <img
-                class="js-header__hamburger-btn js-header__hamburger-btn--open is-active"
-                src="./img/hamburger.svg"
-                alt="ナビゲーション_開くボタン"
-              />
-            </button>
-
-            <div class="offcanvas-right">
-              <div class="p-header__nav-wrap">
-                <nav class="p-header__nav--sp">
-                  <a href="#a-news" class="p-header__nav-link c-link--header">
-                    News
-                  </a>
-                  <a
-                    href="#a-service"
-                    class="p-header__nav-link c-link--header"
-                  >
-                    Service
-                  </a>
-                  <a
-                    href="#a-results"
-                    class="p-header__nav-link c-link--header"
-                  >
-                    Results
-                  </a>
-                  <a href="#a-price" class="p-header__nav-link c-link--header">
-                    Price
-                  </a>
-                  <a
-                    href="#a-comments"
-                    class="p-header__nav-link c-link--header"
-                  >
-                    Comments
-                  </a>
-                  <a href="#a-qa" class="p-header__nav-link c-link--header">
-                    FAQs
-                  </a>
-                  <a
-                    href="#a-contact"
-                    class="p-header__nav-link c-link--header"
-                  >
-                    Contact
-                  </a>
-                </nav>
-              </div>
+            <div class="p-header__nav-wrap">
+              <nav class="p-header__nav--sp">
+                <a href="#a-news" class="p-header__nav-link c-link--header">
+                  News
+                </a>
+                <a href="#a-service" class="p-header__nav-link c-link--header">
+                  Service
+                </a>
+                <a href="#a-results" class="p-header__nav-link c-link--header">
+                  Results
+                </a>
+                <a href="#a-price" class="p-header__nav-link c-link--header">
+                  Price
+                </a>
+                <a href="#a-comments" class="p-header__nav-link c-link--header">
+                  Comments
+                </a>
+                <a href="#a-qa" class="p-header__nav-link c-link--header">
+                  FAQs
+                </a>
+                <a href="#a-contact" class="p-header__nav-link c-link--header">
+                  Contact
+                </a>
+              </nav>
             </div>
+            <div class="p-header__trigger">
+              <img
+                class="p-header__btn p-header__btn-open p-header__btn--is-active"
+                src="./img/hamburger.svg"
+                alt=""
+              />
+              <img
+                class="p-header__btn p-header__btn-close"
+                src="./img/batsu.png"
+                alt=""
+              />
+            </div>
+            <div class="p-header__overlay"></div>
           </div>
         </div>
       </div>
@@ -634,8 +620,6 @@
     <!-- footer end -->
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
   <script src="./js/swiper.min.js"></script>
-  <script src="./js/hiraku.min.js"></script>
   <script src="./js/custom.js"></script>
 </html>
