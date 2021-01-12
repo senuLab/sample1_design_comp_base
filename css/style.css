@@ -657,6 +657,7 @@ body {
   position: fixed;
   top: 2.4rem;
   right: 1.6rem;
+  cursor: pointer;
   transition: all 0.3s;
 }
 
