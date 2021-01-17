@@ -271,8 +271,7 @@ View Raw
   height: 12px;
   display: inline-block;
   border-radius: 100%;
-  background: #000;
-  opacity: 0.2;
+  background: #ffffff;
 }
 button.swiper-pagination-bullet {
   border: none;

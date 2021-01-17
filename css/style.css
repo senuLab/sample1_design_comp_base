@@ -93,7 +93,6 @@ body {
 
 .c-btn {
   padding: 1.6rem 0;
-  box-shadow: 0 0.3rem 0.5rem #3e3e3e33;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -101,7 +100,9 @@ body {
 .c-btn--yellow {
   border-radius: 1rem;
   background-color: #ffaa3b;
+  box-shadow: 0 0.3rem 0.5rem #3e3e3e33;
   color: #ffffff;
+  font-weight: bold;
 }
 
 .c-btn--yellow:hover {
@@ -113,6 +114,7 @@ body {
   border: 0.1rem solid #707070;
   background-color: #ffffff;
   color: #3e3e3e;
+  font-weight: 600;
   font-size: 1.8rem;
 }
 
@@ -126,6 +128,7 @@ body {
   border: 0.1rem solid #ffffff;
   background-color: #3e3e3e;
   color: #ffffff;
+  font-weight: 600;
 }
 
 .c-btn--black:hover {
@@ -238,12 +241,18 @@ body {
   line-height: 1.42857;
 }
 
-.p-access__map {
-  z-index: 2;
+.p-access__map-wrap {
+  position: relative;
   width: 100%;
-  height: auto;
-  min-height: 24.1rem;
+  height: 0;
   margin-bottom: 2.4rem;
+  padding-bottom: 70.3%;
+}
+
+.p-access__map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .p-access__btn {
@@ -429,6 +438,7 @@ body {
 .p-contact__input {
   display: block;
   width: 100%;
+  padding: 0.5rem 0;
   border-bottom: 0.1rem solid rgba(62, 62, 62, 0.5);
   outline: none;
   cursor: pointer;
@@ -441,7 +451,7 @@ body {
 
 .p-contact__input-select {
   height: 3.8rem;
-  padding-left: 1rem !important;
+  padding-left: 1.2rem;
   border: none;
   border: 0.1rem solid rgba(62, 62, 62, 0.5);
 }
@@ -889,6 +899,7 @@ body {
   display: none;
   margin-top: 1.6rem;
   padding: 1.2rem 1.2rem 0 1.2rem;
+  border-radius: 0.4rem;
   background-color: #3b69ff33;
 }
 
@@ -975,6 +986,7 @@ body {
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.2;
+  font-family: "Montserrat", sans-serif;
   letter-spacing: 0.2em;
   text-align: center;
 }
@@ -1036,7 +1048,7 @@ body {
 @import "./object/project/inner";
 @import "./object/project/top"; */
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 851px) {
   .l-header {
     height: 8.3rem;
     background-color: rgba(255, 255, 255, 0.3);
@@ -1095,11 +1107,14 @@ body {
     font-size: 1.6rem;
     line-height: 1.5;
   }
+  .p-access__map-wrap {
+    min-height: 52rem;
+    margin: 12rem 0;
+    padding-bottom: 71.6%;
+  }
   .p-access__map {
     grid-row: 1 / 3;
     grid-column: 2 / 3;
-    min-height: 52rem;
-    margin: 12rem 0;
   }
   .p-access__btn {
     grid-row: 2 / 3;
@@ -1118,7 +1133,6 @@ body {
   .p-comments {
     z-index: 0;
     position: relative;
-    height: 72.4rem;
     background: linear-gradient(to bottom, #f3f3f3 0%, #f3f3f3 20.1%, #3e3e3e 20.1%, #3e3e3e 100%);
   }
   .p-comments::after {
@@ -1212,7 +1226,7 @@ body {
     font-size: 1.8rem;
   }
   .p-contact__input {
-    padding-left: 1.2rem;
+    padding: 0.8rem 1.2rem;
   }
   .p-contact__input-wrap {
     flex: 1;
@@ -1222,6 +1236,7 @@ body {
   .p-contact__input-select {
     max-width: 17.8rem;
     min-height: 4rem;
+    padding: 1.2rem 1.2rem;
   }
   .p-contact__input-textarea {
     width: 100%;
@@ -1302,8 +1317,10 @@ body {
     grid-template-rows: 28.8rem 1fr;
     grid-template-columns: 41.4rem 1fr;
     max-width: 120rem;
+    height: 100%;
     margin: 0 auto;
     padding-left: 6rem;
+    overflow: hidden;
   }
   .p-news {
     height: auto;
@@ -1498,7 +1515,7 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 850px) {
   .u-display--sp-none {
     display: none;
   }

@@ -191,14 +191,14 @@
 
   &__input {
     display: block;
-    //margin-bottom: 3.2rem;
+    padding: 0.5rem 0;
     width: 100%;
     outline: none;
     border-bottom: 0.1rem solid rgba(#3e3e3e, 0.5);
     cursor: pointer;
 
     @include mq("pc") {
-      padding-left: 1.2rem;
+      padding: 0.8rem 1.2rem;
     }
 
     &-wrap {
@@ -216,9 +216,10 @@
       height: 3.8rem;
       border: none;
       border: 0.1rem solid rgba(#3e3e3e, 0.5);
-      padding-left: 1rem !important;
+      padding-left: 1.2rem;
 
       @include mq("pc") {
+        padding: 1.2rem 1.2rem;
         max-width: 17.8rem;
         min-height: 4rem;
       }

@@ -1,13 +1,14 @@
 .c-btn {
   padding: 1.6rem 0;
-  box-shadow: 0 0.3rem 0.5rem #3e3e3e33;
   cursor: pointer;
   transition: all 0.3s;
 
   &--yellow {
     border-radius: 1rem;
     background-color: $color-yellow;
+    box-shadow: 0 0.3rem 0.5rem #3e3e3e33;
     color: $color-white;
+    font-weight: bold;
 
     @include mq("pc") {
       font-size: 1.8rem;
@@ -24,6 +25,7 @@
     color: #3e3e3e;
     border: 0.1rem solid #707070;
     font-size: 1.8rem;
+    font-weight: 600;
 
     @include mq("pc") {
       padding: 2rem 8rem;
@@ -41,6 +43,7 @@
     background-color: #3e3e3e;
     color: $color-white;
     border: 0.1rem solid $color-white;
+    font-weight: 600;
 
     &:hover {
       background-color: $color-white;

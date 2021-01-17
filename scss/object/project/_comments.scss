@@ -11,7 +11,8 @@
   @include mq("pc") {
     position: relative;
     z-index: 0;
-    height: 72.4rem;
+    //min-height: 72.4rem;
+    //height: 72.4rem;
     background: linear-gradient(
       to bottom,
       #f3f3f3 0%,

@@ -27,12 +27,20 @@ $(function(){
   var mySwiper = new Swiper ('.swiper-container', {
       width:400,
       spaceBetween:40,
+      loop: true,
+      loopAdditionalSlides:3,
 
       breakpoints:{
-          767:{
+          /* 767:{
               width:274,
               spaceBetween:24,
-          }
+              loopAdditionalSlides:4,
+          } */
+          850:{
+            width:274,
+            spaceBetween:24,
+            loopAdditionalSlides:4,
+        }
       },
 
       pagination: { 
