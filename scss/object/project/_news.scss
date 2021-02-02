@@ -1,7 +1,7 @@
 .p-news {
   position: relative;
   height: 57.4rem;
-  background-color: #f3f3f3;
+  background-color: $color-lightgray;
 
   @include mq("pc") {
     overflow: hidden;
@@ -31,7 +31,7 @@
   }
 
   &__title {
-    padding: 4rem 0;
+    padding: 4rem 0 4.2rem 0;
     border-bottom: 0.1rem solid #cecdcd;
 
     @include mq("pc") {
@@ -73,17 +73,18 @@
   }
 
   &__date {
-    margin-right: 2.4rem;
+    margin-right: 2.3rem;
+    padding-top: 0.2rem;
     font-size: 1.4rem;
     line-height: font-height(2rem, 1.4rem);
-    letter-spacing: font-space(0.035rem);
+    letter-spacing: 0.35px;
     font-weight: 400;
 
     @include mq("pc") {
       margin-right: 4rem;
       font-size: 1.8rem;
       line-height: font-height(2.6rem, 1.8rem);
-      letter-spacing: font-space(30em);
+      letter-spacing: 0.45px;
     }
   }
 
@@ -98,7 +99,7 @@
       margin-right: 3.2rem;
       font-size: 1.4rem;
       line-height: font-height(1.4rem, 1.4rem);
-      letter-spacing: font-space(10em);
+      letter-spacing: 0.35px;
     }
   }
 
@@ -112,18 +113,18 @@
       margin-right: 8.3rem;
       font-size: 1.8rem;
       line-height: font-height(2.8rem, 1.8rem);
-      letter-spacing: font-space(30em);
+      letter-spacing: 0.45px;
     }
   }
 
   &__btn {
     margin: 4rem auto;
     width: 26.8rem;
-    letter-spacing: font-space(270em);
+    letter-spacing: 3.6px;
 
     @include mq("pc") {
       width: 23.6rem;
-      letter-spacing: font-space(270em);
+      letter-spacing: 4px;
     }
   }
 }

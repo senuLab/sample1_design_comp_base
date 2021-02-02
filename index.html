@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Sample1</title>
   </head>
-  <body>
+  <body class="p-body">
     <!-- header start -->
     <header class="l-header">
       <div class="p-header">
@@ -410,7 +410,7 @@
             </p>
             <div class="p-qa__answer-wrap p-qa__answer-wrap--open">
               <p class="p-qa__answer">
-                回答回答回答回答回答回答回答回答回答回答回答回答
+                回答回答回答回答回答回答回答回答回答回答回答
               </p>
             </div>
           </div>
@@ -453,28 +453,26 @@
 
     <!-- access start -->
     <div class="p-access" id="a-access">
-      <div class="p-inner">
-        <div class="p-inner--access">
-          <div class="p-access__detail-wrap">
-            <h2 class="p-access__title c-title">Access</h2>
-            <p class="p-access__address">
-              〒106-6126<br />東京都港区六本木 6丁目 10-1<br />六本木ヒルズ森タワー
-            </p>
-          </div>
-          <div class="p-access__map-wrap">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3241.674114583062!2d139.72727301514442!3d35.66039993019918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z44CSMTA2LTYxMjYg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyoIDbkuIHnm64gMTAtMSDlha3mnKzmnKjjg5Ljg6vjgrrmo67jgr_jg6_jg7w!5e0!3m2!1sja!2sjp!4v1609415672621!5m2!1sja!2sjp"
-              class="p-access__map"
-              frameborder="0"
-              style="border: 0"
-              allowfullscreen=""
-              aria-hidden="false"
-              tabindex="0"
-            >
-            </iframe>
-          </div>
-          <button class="p-access__btn c-btn c-btn--black">Google Maps</button>
+      <div class="p-inner--access">
+        <div class="p-access__detail-wrap">
+          <h2 class="p-access__title c-title">Access</h2>
+          <p class="p-access__address">
+            〒106-6126<br />東京都港区六本木 6丁目 10-1<br />六本木ヒルズ森タワー
+          </p>
         </div>
+        <div class="p-access__map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3241.674114583062!2d139.72727301514442!3d35.66039993019918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z44CSMTA2LTYxMjYg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyoIDbkuIHnm64gMTAtMSDlha3mnKzmnKjjg5Ljg6vjgrrmo67jgr_jg6_jg7w!5e0!3m2!1sja!2sjp!4v1609415672621!5m2!1sja!2sjp"
+            class="p-access__map"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          >
+          </iframe>
+        </div>
+        <button class="p-access__btn c-btn c-btn--black">Google Maps</button>
       </div>
     </div>
     <!-- access end -->
@@ -491,7 +489,7 @@
         <form action="post" class="p-contact__form">
           <div class="p-contact__form-item">
             <label class="p-contact__label">お問い合わせ種別 </label>
-            <div class="p-contact__input-wrap">
+            <div class="p-contact__input-wrap p-contact__input-wrap--select">
               <select
                 name="kind"
                 class="p-contact__input p-contact__input-select"

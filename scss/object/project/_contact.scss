@@ -7,14 +7,14 @@
   &__top {
     width: 100%;
     max-width: 96rem;
-    padding: 4rem 1.6rem;
+    padding: 4rem 1.6rem 3.6rem 1.6rem;
     margin-top: 4rem;
     background: transparent url(./../img/contact1@.png) no-repeat center center /
       cover;
     border-radius: 1.2rem 1.2rem 0 0;
 
     @include mq("pc") {
-      padding: 6rem 0;
+      padding: 6rem 0 5.3rem 0;
       margin: 6rem auto 0;
       text-align: center;
     }
@@ -25,13 +25,14 @@
     color: $color-white;
 
     @include mq("pc") {
-      margin-bottom: 1.6rem;
+      margin-bottom: 1.3rem;
     }
   }
 
   &__message {
     color: $color-white;
     font-size: 1.4rem;
+    line-height: font-height(2rem, 1.4rem);
 
     @include mq("pc") {
       font-size: 1.6rem;
@@ -92,13 +93,13 @@
       margin-bottom: 0;
 
       &:not(:last-child) {
-        width: 16.8rem;
+        width: 19rem;
       }
     }
 
     &-radio {
       display: inline-block;
-      margin-right: 4rem;
+      margin-right: 3.5rem;
       cursor: pointer;
       position: relative;
       padding-left: 2rem;
@@ -112,8 +113,8 @@
         display: block;
         width: 1.2rem;
         height: 1.2rem;
-        background-color: #ffffff;
-        border: 0.1rem solid #707070;
+        background-color: $color-white;
+        border: 0.1rem solid $color-gray;
         border-radius: 50%;
         box-sizing: border-box;
       }
@@ -145,7 +146,7 @@
         width: 2.4rem;
         height: 1.2rem;
         padding: 0.2rem 0.8rem;
-        margin-left: 1.2rem;
+        margin-left: 0.9rem;
         font-size: 1.2rem;
         color: $color-white;
         background-color: #ff4646;
@@ -177,7 +178,7 @@
         transform: translateY(-50%);
         width: 2rem;
         height: 2rem;
-        border: 1px solid #707070;
+        border: 1px solid $color-gray;
         box-sizing: border-box;
       }
 
@@ -191,14 +192,22 @@
 
   &__input {
     display: block;
-    padding: 0.5rem 0;
+    padding: 0 0 0.3rem 0;
     width: 100%;
     outline: none;
-    border-bottom: 0.1rem solid rgba(#3e3e3e, 0.5);
+    border-bottom: 0.1rem solid rgba($color-black, 0.5);
     cursor: pointer;
 
     @include mq("pc") {
-      padding: 0.8rem 1.2rem;
+      padding: 1rem 1.2rem 0.8rem 1.2rem;
+    }
+
+    &::placeholder {
+      letter-spacing: 0.5px;
+
+      @include mq("pc") {
+        letter-spacing: 1.5px;
+      }
     }
 
     &-wrap {
@@ -210,18 +219,42 @@
         flex: 1;
         width: auto;
       }
+
+      &--select {
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 6px;
+          height: 6px;
+          border: 0px;
+          border-bottom: solid 2px $color-black;
+          border-right: solid 2px $color-black;
+          transform: translateY(-70%) rotate(45deg);
+          position: absolute;
+          top: 50%;
+          left: 29.5rem;
+
+          @include mq("pc") {
+            left: 15rem;
+          }
+        }
+      }
     }
 
     &-select {
       height: 3.8rem;
       border: none;
-      border: 0.1rem solid rgba(#3e3e3e, 0.5);
-      padding-left: 1.2rem;
+      border: 0.1rem solid rgba($color-black, 0.5);
+      padding: 0 0 0 0.8rem;
+      letter-spacing: 1.2px;
+      appearance: none;
 
       @include mq("pc") {
         padding: 1.2rem 1.2rem;
         max-width: 17.8rem;
         min-height: 4rem;
+        letter-spacing: 2.2px;
       }
 
       &:hover {

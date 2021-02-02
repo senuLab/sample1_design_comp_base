@@ -1,6 +1,6 @@
 .p-access {
   overflow: hidden;
-  background-color: #3e3e3e;
+  background-color: $color-black;
 
   @include mq("pc") {
     position: relative;
@@ -9,8 +9,8 @@
       to right,
       transparent 0%,
       transparent 76.6%,
-      #f3f3f3 76.6%,
-      #f3f3f3 100%
+      $color-lightgray 76.6%,
+      $color-lightgray 100%
     );
 
     &::before {
@@ -19,15 +19,15 @@
       position: absolute;
       top: 0;
       left: 0;
-      z-index: -1;
+      z-index: map-get($layers, bg-back);
       width: 100%;
       height: 100%;
       background: linear-gradient(
         to bottom,
-        #3e3e3e 0%,
-        #3e3e3e 66.3%,
-        #f3f3f3 66.3%,
-        #f3f3f3 100%
+        $color-black 0%,
+        $color-black 66.3%,
+        $color-lightgray 66.3%,
+        $color-lightgray 100%
       );
     }
   }
@@ -46,7 +46,7 @@
     color: $color-white;
 
     @include mq("pc") {
-      margin: 12rem 0 6rem 0;
+      margin: 12rem 0 5.6rem 0;
     }
   }
 
@@ -70,11 +70,9 @@
     margin-bottom: 2.4rem;
 
     @include mq("pc") {
-      //height: 100%;
       padding-bottom: 71.6%;
       min-height: 52rem;
       margin: 12rem 0;
-      //margin: auto 0;
     }
   }
 
@@ -97,7 +95,7 @@
     font-size: 1.8rem;
     font-family: $font-family-montserrat;
     font-weight: 600;
-    letter-spacing: font-space(100em);
+    letter-spacing: 1.8px;
 
     @include mq("pc") {
       grid-row: 2 / 3;
@@ -107,7 +105,7 @@
       margin-top: 3.2rem;
       margin-right: 10rem;
       font-size: 2rem;
-      letter-spacing: font-space(100em);
+      letter-spacing: 2px;
     }
   }
 }

@@ -4,7 +4,7 @@
 
   @include mq("pc") {
     display: flex;
-    padding: 6rem 0;
+    padding: 5.8rem 0 6rem 0;
     margin: 0 auto;
     width: calc(100% - 8rem);
     max-width: 96rem;
@@ -17,31 +17,31 @@
   }
 
   &__icons {
-    margin-bottom: 4.2rem;
+    margin-bottom: 4rem;
 
     @include mq("pc") {
-      margin-bottom: 4rem;
+      margin-bottom: 3.6rem;
       text-align: left;
     }
   }
 
   &__icon {
     &:not(:last-child) {
-      margin-right: 5rem;
+      margin-right: 4.5rem;
 
       @include mq("pc") {
-        margin-right: 2.8rem;
+        margin-right: 2.6rem;
       }
     }
   }
 
   &__logo {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.6rem;
     font-size: 3.2rem;
     color: #e3e3e3;
 
     @include mq("pc") {
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
       font-size: 4rem;
     }
   }
@@ -49,7 +49,7 @@
   &__site-map {
     display: flex;
     flex-direction: column;
-    margin-bottom: 4rem;
+    margin-bottom: 4.5rem;
   }
 
   &__link {
@@ -79,7 +79,7 @@
       content: "";
       width: 0;
       height: 1px;
-      background-color: #ffffff;
+      background-color: $color-white;
       transition: all 0.3s;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
@@ -93,8 +93,9 @@
   &__copyright {
     font-family: $font-family-montserrat;
     font-size: 1.2rem;
+    letter-spacing: 0.3px;
     font-weight: 400;
-    color: rgba(#ffffff, 0.4);
+    color: rgba($color-white, 0.4);
 
     @include mq("pc") {
       text-align: right;

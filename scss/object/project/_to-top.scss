@@ -1,13 +1,13 @@
 .p-to-top {
   position: fixed;
-  z-index: 300;
+  z-index: map-get($layers, to-top);
   bottom: 1.3rem;
   right: 1.6rem;
   width: 5rem;
 
   @include mq("pc") {
-    bottom: 3rem;
-    right: 3rem;
-    width: 7rem;
+    bottom: 8.3rem;
+    right: 4rem;
+    width: 5rem;
   }
 }

@@ -1,16 +1,22 @@
 $breakpoints: (
-  /* "sp": "screen and (max-width: 767px)",
-  "pc": "screen and (min-width: 768px)", */
-    "sp": "screen and (max-width: 850px)",
-  "pc": "screen and (min-width: 851px)"
+  "sp": "screen and (max-width: 767px)",
+  "pc": "screen and (min-width: 768px)",
 ) !default;
 
 $layers: (
+  bg-back: -1,
+  to-top: 4,
   header: 5,
+  overlay: 10,
+  nav-wrap: 15,
+  menu: 20,
 );
 
 $font-family-montserrat: "Montserrat", sans-serif;
 
+$color-black: #3e3e3e;
 $color-white: #ffffff;
+$color-gray: #707070;
+$color-lightgray: #f3f3f3;
 $color-yellow: #ffaa3b;
 $color-blue: #3b69ff;

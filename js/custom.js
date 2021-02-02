@@ -1,17 +1,20 @@
 $(function(){
 
+  //ハンバーガーメニュー
   $('.p-header__trigger').on('click',function(){
     if($(this).hasClass('p-header__trigger--is-active')){
       $(this).removeClass('p-header__trigger--is-active');
       $(".p-header__btn").toggleClass("p-header__btn--is-active");
       $('.p-header__nav-wrap').removeClass('p-header__nav-wrap--is-active');
       $('.p-header__overlay').removeClass('p-header__overlay--is-open');
+      $("html").css("overflow", "scroll");
     }  
     else {
       $(this).addClass('p-header__trigger--is-active');
       $(".p-header__btn").toggleClass("p-header__btn--is-active");
       $('.p-header__nav-wrap').addClass('p-header__nav-wrap--is-active'); 
       $('.p-header__overlay').addClass('p-header__overlay--is-open');
+      $("html").css("overflow", "hidden");
     } 
   });
 
@@ -21,9 +24,11 @@ $(function(){
       $(".p-header__btn").toggleClass("p-header__btn--is-active");
       $('.p-header__nav-wrap').removeClass('p-header__nav-wrap--is-active');
       $('.p-header__overlay').removeClass('p-header__overlay--is-open');
+      $("html").css("overflow", "scroll");
     }
   }); 
 
+  //スワイパー
   var mySwiper = new Swiper ('.swiper-container', {
       width:400,
       spaceBetween:40,
@@ -31,25 +36,21 @@ $(function(){
       loopAdditionalSlides:3,
 
       breakpoints:{
-          /* 767:{
+          767:{
               width:274,
-              spaceBetween:24,
+              spaceBetween:20,
               loopAdditionalSlides:4,
-          } */
-          850:{
-            width:274,
-            spaceBetween:24,
-            loopAdditionalSlides:4,
-        }
+          } 
       },
 
       pagination: { 
-        el: '.swiper-pagination', //ページネーションの要素
-        type: 'bullets', //ページネーションの種類
-         clickable: true, //クリックに反応させる
+        el: '.swiper-pagination',
+        type: 'bullets',
+         clickable: true,
       },
   });
 
+  //Q&Aのアコーディオン
   $(".p-qa__item").on("click",function(){
     if($(this).children("p").hasClass("p-qa__question--close")){
       $(this).children("div").slideDown();
@@ -63,6 +64,7 @@ $(function(){
     }
   });
 
+  //スクロール
   $('.p-header__nav-link').on("click",function () {
 
     $('body').css('position', 'static');
@@ -82,6 +84,7 @@ $(function(){
         
     });
 
+  //トップへスクロール
   $('.p-to-top').on("click",function () {
 
     let header = $(".l-header").innerHeight(); 
@@ -97,6 +100,7 @@ $(function(){
   let $input = $(".p-contact__input--required");
   let $button = $(".p-contact__btn");
 
+  //必須項目の入力判定
   $input.on("change",function(){
 
     if($(".p-contact__input-name").val() !== "" &&

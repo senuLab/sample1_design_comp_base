@@ -1,0 +1,5 @@
+.p-body {
+  &--is-open {
+    transform: translateX(-25rem);
+  }
+}

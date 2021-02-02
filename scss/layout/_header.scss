@@ -8,6 +8,6 @@
 
   @include mq("pc") {
     height: 8.3rem;
-    background-color: rgba(#ffffff1a, 0.3);
+    background-color: rgba($color-white, 0.3);
   }
 }

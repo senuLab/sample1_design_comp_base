@@ -1,6 +1,6 @@
 .p-results {
   overflow: hidden;
-  background-color: #f3f3f3;
+  background-color: $color-lightgray;
 
   @include mq("pc") {
     height: 75.4rem;
@@ -8,8 +8,8 @@
 
   &__wrap {
     height: 53.2rem;
-    padding-left: 2rem;
-    background-color: #3e3e3e;
+    padding-left: 1.7rem;
+    background-color: $color-black;
 
     @include mq("pc") {
       margin-left: 4rem;
@@ -20,7 +20,7 @@
 
   &__title {
     color: $color-white;
-    padding: 4rem 0;
+    padding: 4rem 1.7rem 4.2rem 0;
 
     @include mq("pc") {
       padding: 6rem 0;
@@ -37,7 +37,7 @@
   }
 
   &__head {
-    padding-bottom: 1.2rem;
+    padding-bottom: 0.7rem;
     font-weight: bold;
     font-size: 1.4rem;
     line-height: font-height(1.6rem, 1.4rem);
@@ -52,6 +52,7 @@
   &__body {
     font-size: 1.2rem;
     line-height: font-height(1.8rem, 1.2rem);
+    letter-spacing: -0.09px;
 
     @include mq("pc") {
       font-size: 1.6rem;
@@ -60,12 +61,12 @@
   }
 
   &__btn {
-    margin-top: 2.4rem;
-    margin-left: 1rem;
+    margin-top: 2.2rem;
+    margin-left: 1.2rem;
     width: 31.6rem;
     font-size: 1.8rem;
     line-height: font-height(2.3rem, 1.8rem);
-    letter-spacing: font-space(300em);
+    letter-spacing: 3.6px;
 
     @include mq("pc") {
       width: 28.9rem;
@@ -74,12 +75,12 @@
       margin-top: 4rem;
       font-size: 2rem;
       line-height: font-height(2.25rem, 2rem);
-      letter-spacing: font-space(300em);
+      letter-spacing: 4px;
     }
   }
 
   &__page {
-    margin-top: 2.4rem;
+    margin-top: 2.6rem;
     height: 2rem;
 
     @include mq("pc") {

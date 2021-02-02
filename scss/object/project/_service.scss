@@ -2,10 +2,10 @@
   height: 87rem;
   background: linear-gradient(
     to bottom,
-    #3e3e3e 0%,
-    #3e3e3e 55%,
-    #f3f3f3 55%,
-    #f3f3f3 100%
+    $color-black 0%,
+    $color-black 55%,
+    $color-lightgray 55%,
+    $color-lightgray 100%
   );
 
   @include mq("pc") {
@@ -14,10 +14,10 @@
     background: none;
     background: linear-gradient(
       to bottom,
-      #3e3e3e 0%,
-      #3e3e3e 65%,
-      #f3f3f3 65%,
-      #f3f3f3 100%
+      $color-black 0%,
+      $color-black 65%,
+      $color-lightgray 65%,
+      $color-lightgray 100%
     );
   }
 
@@ -33,7 +33,7 @@
 
   &__wrap {
     width: 100%;
-    padding: 4rem 1.6rem;
+    padding: 4.2rem 1.6rem 3.4rem 1.6rem;
     background-color: $color-white;
     box-shadow: 0 0.5rem 1.2rem #3e3e3e33;
 
@@ -51,7 +51,7 @@
 
   &__item {
     &:not(:last-child) {
-      margin-bottom: 4.5rem;
+      margin-bottom: 3.6rem;
 
       @include mq("pc") {
         margin-right: 9rem;
@@ -63,21 +63,22 @@
   &__img {
     width: 5rem;
     height: 6rem;
-    margin: 0 auto 0.8rem;
+    margin: 0 auto 0.9rem;
   }
 
   &__head {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.8rem;
     text-align: center;
     font-family: $font-family-montserrat;
     font-weight: 600;
     font-size: 2rem;
     line-height: font-height(2.4rem, 2rem);
-    letter-spacing: font-space(200em);
+    letter-spacing: 4px;
 
     @include mq("pc") {
+      margin-bottom: 1rem;
       line-height: font-height(2.8rem, 2rem);
-      letter-spacing: font-space(200em);
+      letter-spacing: 4px;
     }
   }
 
