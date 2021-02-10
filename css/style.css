@@ -70,6 +70,7 @@ input {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -1044,6 +1045,7 @@ body {
 }
 
 .p-to-top {
+  display: none;
   z-index: 4;
   position: fixed;
   right: 1.6rem;

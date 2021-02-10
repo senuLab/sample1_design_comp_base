@@ -1,4 +1,13 @@
 $(function(){
+  $(window).on('scroll',function() {
+    var scroll = $(window).scrollTop();
+
+    if ($(this).scrollTop() > 100) {
+      $('.p-to-top').fadeIn();
+    } else {
+      $('.p-to-top').fadeOut();
+    }
+  });
 
   //ハンバーガーメニュー
   $('.p-header__trigger').on('click',function(){
