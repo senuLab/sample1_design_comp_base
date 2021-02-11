@@ -55,7 +55,7 @@ $(function(){
       pagination: { 
         el: '.swiper-pagination',
         type: 'bullets',
-         clickable: true,
+        clickable: true,
       },
   });
 
@@ -76,9 +76,16 @@ $(function(){
   //スクロール
   $('.p-header__nav-link').on("click",function () {
 
-    $('body').css('position', 'static');
-    $('body').css('overflow', 'scroll');
-    $('body').css('overflow-y', 'scroll');
+    $('html').css('position', 'static');
+    $('html').css('overflow', 'scroll');
+    $('html').css('overflow-y', 'scroll');
+
+    if($('.p-header__nav-wrap').hasClass('p-header__nav-wrap--is-active')){
+      $('.p-header__nav-wrap').toggleClass('p-header__nav-wrap--is-active');
+      $('.p-header__trigger').removeClass('p-header__trigger--is-active');
+      $(".p-header__btn").toggleClass("p-header__btn--is-active");
+      $('.p-header__overlay').removeClass('p-header__overlay--is-open');
+    }
 
 
     let header = $(".l-header").innerHeight(); 
@@ -94,7 +101,7 @@ $(function(){
     });
 
   //トップへスクロール
-  $('.p-to-top').on("click",function () {
+  $('.p-to-top, .p-header__logo-link').on("click",function () {
 
     let header = $(".l-header").innerHeight(); 
     let id = $(this).attr("href");

@@ -469,7 +469,7 @@ body {
 .p-contact__input-wrap--select::after {
   position: absolute;
   top: 50%;
-  left: 29.5rem;
+  right: 1.7rem;
   width: 6px;
   height: 6px;
   transform: translateY(-70%) rotate(45deg);
@@ -633,7 +633,8 @@ body {
   height: 100%;
 }
 
-.p-header__logo {
+.p-header__logo-link {
+  display: block;
   margin-right: auto;
 }
 
@@ -1320,7 +1321,7 @@ body {
   .p-footer__copyright {
     text-align: right;
   }
-  .p-header__logo {
+  .p-header__logo-link {
     display: none;
   }
   .p-header__nav {

@@ -8,8 +8,9 @@
     height: 100%;
   }
 
-  &__logo {
+  &__logo-link {
     margin-right: auto;
+    display: block;
 
     @include mq("pc") {
       display: none;

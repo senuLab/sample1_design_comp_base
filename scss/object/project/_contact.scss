@@ -233,7 +233,7 @@
           transform: translateY(-70%) rotate(45deg);
           position: absolute;
           top: 50%;
-          left: 29.5rem;
+          right: 1.7rem;
 
           @include mq("pc") {
             left: 15rem;
