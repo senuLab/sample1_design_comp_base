@@ -48,12 +48,15 @@
   }
 
   &__btn {
+    display: block;
     margin: 0 auto;
     padding: 1.6rem 3.2rem;
+    width: fit-content;
 
     @include mq("pc") {
       margin: 0;
       max-width: 28.2rem;
+      text-align: center;
     }
   }
 

@@ -1075,6 +1075,10 @@ body {
 }
 
 .p-top__btn {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 0 auto;
   padding: 1.6rem 3.2rem;
 }
@@ -1558,6 +1562,7 @@ body {
   .p-top__btn {
     max-width: 28.2rem;
     margin: 0;
+    text-align: center;
   }
   .u-display--pc-none {
     display: none;
