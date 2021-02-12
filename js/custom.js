@@ -9,10 +9,6 @@ $(function(){
     }
   });
 
-  document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
-
-  console.log(document);
-
   //ハンバーガーメニュー
   $('.p-header__trigger').on('click',function(){
     if($(this).hasClass('p-header__trigger--is-active')){
@@ -22,6 +18,7 @@ $(function(){
       $('.p-header__overlay').removeClass('p-header__overlay--is-open');
       $("html").css("overflow", "scroll");
       $('body').css('overflow', 'scroll');
+      document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: true});
     }  
     else {
       $(this).addClass('p-header__trigger--is-active');
@@ -30,6 +27,7 @@ $(function(){
       $('.p-header__overlay').addClass('p-header__overlay--is-open');
       $("html").css("overflow", "hidden");
       $('body').css('overflow', 'hidden');
+      document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
     } 
   });
 
@@ -41,6 +39,7 @@ $(function(){
       $('.p-header__overlay').removeClass('p-header__overlay--is-open');
       $("html").css("overflow", "scroll");
       $('body').css('overflow', 'scroll');
+      document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: true});
     }
   }); 
 
@@ -85,6 +84,7 @@ $(function(){
 
     $('html').css('overflow', 'scroll');
     $('body').css('overflow', 'scroll');
+    document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: true});
 
     if($('.p-header__nav-wrap').hasClass('p-header__nav-wrap--is-active')){
       $('.p-header__nav-wrap').toggleClass('p-header__nav-wrap--is-active');
