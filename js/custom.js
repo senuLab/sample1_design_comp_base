@@ -74,7 +74,7 @@ $(function(){
   });
 
   //スクロール
-  $('.p-header__nav-link').on("click",function () {
+  $('.p-header__nav-link, .p-top__btn').on("click",function () {
 
     $('html').css('position', 'static');
     $('html').css('overflow', 'scroll');
