@@ -9,6 +9,10 @@ $(function(){
     }
   });
 
+  document.addEventListener('touchmove', function(e) {e.preventDefault();}, {passive: false});
+
+  console.log(document);
+
   //ハンバーガーメニュー
   $('.p-header__trigger').on('click',function(){
     if($(this).hasClass('p-header__trigger--is-active')){
@@ -17,6 +21,7 @@ $(function(){
       $('.p-header__nav-wrap').removeClass('p-header__nav-wrap--is-active');
       $('.p-header__overlay').removeClass('p-header__overlay--is-open');
       $("html").css("overflow", "scroll");
+      $('body').css('overflow', 'scroll');
     }  
     else {
       $(this).addClass('p-header__trigger--is-active');
@@ -24,6 +29,7 @@ $(function(){
       $('.p-header__nav-wrap').addClass('p-header__nav-wrap--is-active'); 
       $('.p-header__overlay').addClass('p-header__overlay--is-open');
       $("html").css("overflow", "hidden");
+      $('body').css('overflow', 'hidden');
     } 
   });
 
@@ -34,6 +40,7 @@ $(function(){
       $('.p-header__nav-wrap').removeClass('p-header__nav-wrap--is-active');
       $('.p-header__overlay').removeClass('p-header__overlay--is-open');
       $("html").css("overflow", "scroll");
+      $('body').css('overflow', 'scroll');
     }
   }); 
 
@@ -76,9 +83,8 @@ $(function(){
   //スクロール
   $('.p-header__nav-link, .p-top__btn').on("click",function () {
 
-    $('html').css('position', 'static');
     $('html').css('overflow', 'scroll');
-    $('html').css('overflow-y', 'scroll');
+    $('body').css('overflow', 'scroll');
 
     if($('.p-header__nav-wrap').hasClass('p-header__nav-wrap--is-active')){
       $('.p-header__nav-wrap').toggleClass('p-header__nav-wrap--is-active');
