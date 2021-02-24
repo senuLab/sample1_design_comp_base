@@ -1,89 +1,89 @@
 .p-service {
-  height: 87rem;
-  background: linear-gradient(
-    to bottom,
-    $color-black 0%,
-    $color-black 55%,
-    $color-lightgray 55%,
-    $color-lightgray 100%
-  );
-
-  @include mq("pc") {
-    position: relative;
-    height: 61.5rem;
-    background: none;
+    height: 87rem;
     background: linear-gradient(
-      to bottom,
-      $color-black 0%,
-      $color-black 65%,
-      $color-lightgray 65%,
-      $color-lightgray 100%
+        to bottom,
+        $color-black 0%,
+        $color-black 55%,
+        $color-lightgray 55%,
+        $color-lightgray 100%
     );
-  }
-
-  &__title {
-    position: relative;
-    padding: 4rem 0;
-    color: $color-white;
 
     @include mq("pc") {
-      padding: 6rem 0;
+        position: relative;
+        height: 61.5rem;
+        background: none;
+        background: linear-gradient(
+            to bottom,
+            $color-black 0%,
+            $color-black 65%,
+            $color-lightgray 65%,
+            $color-lightgray 100%
+        );
     }
-  }
 
-  &__wrap {
-    width: 100%;
-    padding: 4.2rem 1.6rem 3.4rem 1.6rem;
-    background-color: $color-white;
-    box-shadow: 0 0.5rem 1.2rem #3e3e3e33;
+    &__title {
+        position: relative;
+        padding: 4rem 0;
+        color: $color-white;
 
-    @include mq("pc") {
-      display: flex;
-      position: absolute;
-      left: 50%;
-      width: calc(100% - 8rem);
-      transform: translateX(calc(-1 * (50% + 4rem)));
-      max-width: 96rem;
-      padding: 6.5rem 4.5rem 6rem;
-      margin: 0 4rem;
+        @include mq("pc") {
+            padding: 6rem 0;
+        }
     }
-  }
 
-  &__item {
-    &:not(:last-child) {
-      margin-bottom: 3.6rem;
+    &__wrap {
+        width: 100%;
+        padding: 4.2rem 1.6rem 3.4rem 1.6rem;
+        background-color: $color-white;
+        box-shadow: 0 0.5rem 1.2rem #3e3e3e33;
 
-      @include mq("pc") {
-        margin-right: 9rem;
-        margin-bottom: 0;
-      }
+        @include mq("pc") {
+            display: flex;
+            position: absolute;
+            left: 50%;
+            width: calc(100% - 8rem);
+            transform: translateX(calc(-1 * (50% + 4rem)));
+            max-width: 96rem;
+            padding: 6.5rem 4.5rem 6rem;
+            margin: 0 4rem;
+        }
     }
-  }
 
-  &__img {
-    width: 5rem;
-    height: 6rem;
-    margin: 0 auto 0.9rem;
-  }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 3.6rem;
 
-  &__head {
-    margin-bottom: 1.8rem;
-    text-align: center;
-    font-family: $font-family-montserrat;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: font-height(2.4rem, 2rem);
-    letter-spacing: 4px;
-
-    @include mq("pc") {
-      margin-bottom: 1rem;
-      line-height: font-height(2.8rem, 2rem);
-      letter-spacing: 4px;
+            @include mq("pc") {
+                margin-right: 9rem;
+                margin-bottom: 0;
+            }
+        }
     }
-  }
 
-  &__body {
-    font-size: 1.4rem;
-    line-height: font-height(2.4rem, 1.4rem);
-  }
+    &__img {
+        width: 5rem;
+        height: 6rem;
+        margin: 0 auto 0.9rem;
+    }
+
+    &__head {
+        margin-bottom: 1.8rem;
+        text-align: center;
+        font-family: $font-family-montserrat;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: font-height(24, 20);
+        letter-spacing: font-space(20, 4);
+
+        @include mq("pc") {
+            margin-bottom: 1rem;
+            line-height: font-height(28, 20);
+            letter-spacing: font-space(20, 4);
+        }
+    }
+
+    &__body {
+        font-size: 1.4rem;
+        line-height: font-height(24, 14);
+    }
 }

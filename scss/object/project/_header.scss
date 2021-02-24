@@ -1,145 +1,145 @@
 .p-header {
-  height: 100%;
-
-  &__wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100%;
-  }
 
-  &__logo-link {
-    margin-right: auto;
-    display: block;
-
-    @include mq("pc") {
-      display: none;
-    }
-  }
-
-  &__nav {
-    display: none;
-
-    @include mq("pc") {
-      display: block;
-      text-align: center;
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
     }
 
-    &--sp {
-      display: flex;
-      flex-direction: column;
-      height: 34.6rem;
-    }
-  }
+    &__logo-link {
+        margin-right: auto;
+        display: block;
 
-  &__nav-wrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: map-get($layers, nav-wrap);
-    top: 0;
-    right: 0;
-    transform: translateX(30rem);
-    width: 30rem;
-    height: 100%;
-    background-color: $color-white;
-    transition: all 0.3s;
-
-    &--is-active {
-      transform: translateX(0);
-    }
-  }
-
-  &__nav-link {
-    position: relative;
-    margin-bottom: 3.2rem;
-    font-size: 1.8rem;
-    line-height: font-height(2.2rem, 1.8rem);
-    font-weight: 500;
-    text-align: center;
-    width: fit-content;
-    margin: 0 auto;
-
-    @include mq("pc") {
-      margin-right: 4rem;
-      font-size: 1.6rem;
-      line-height: font-height(1.9rem, 1.6rem);
-      letter-spacing: -0.97px;
-
-      &:last-child {
-        margin-right: 0;
-      }
+        @include mq("pc") {
+            display: none;
+        }
     }
 
-    &::after {
-      position: absolute;
-      bottom: -0.55rem;
-      left: 50%;
-      content: "";
-      width: 0;
-      height: 1px;
-      background-color: $color-black;
-      transition: all 0.3s;
-      -webkit-transform: translateX(-50%);
-      transform: translateX(-50%);
+    &__nav {
+        display: none;
+
+        @include mq("pc") {
+            display: block;
+            text-align: center;
+        }
+
+        &--sp {
+            display: flex;
+            flex-direction: column;
+            height: 34.6rem;
+        }
     }
 
-    &:hover::after {
-      width: 100%;
-    }
-  }
+    &__nav-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: map-get($layers, nav-wrap);
+        top: 0;
+        right: 0;
+        transform: translateX(30rem);
+        width: 30rem;
+        height: 100%;
+        background-color: $color-white;
+        transition: all 0.3s;
 
-  &__trigger {
-    display: block;
-    position: fixed;
-    top: 2.4rem;
-    right: 1.6rem;
-    z-index: map-get($layers, menu);
-    transition: all 0.3s;
-    cursor: pointer;
-
-    @include mq("pc") {
-      display: none;
-    }
-
-    &--is-active {
-      position: fixed;
-      right: 31.6rem;
-    }
-  }
-
-  &__btn {
-    &-open {
-      display: none;
+        &--is-active {
+            transform: translateX(0);
+        }
     }
 
-    &-close {
-      display: none;
+    &__nav-link {
+        position: relative;
+        margin-bottom: 3.2rem;
+        font-size: 1.8rem;
+        line-height: font-height(22, 18);
+        font-weight: 500;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
+
+        @include mq("pc") {
+            margin-right: 4rem;
+            font-size: 1.6rem;
+            line-height: font-height(19, 16);
+            letter-spacing: font-space(16, -0.4);
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            bottom: -0.55rem;
+            left: 50%;
+            content: "";
+            width: 0;
+            height: 1px;
+            background-color: $color-black;
+            transition: all 0.3s;
+            -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
     }
 
-    &--is-active {
-      display: block;
-    }
-  }
+    &__trigger {
+        display: block;
+        position: fixed;
+        top: 2.4rem;
+        right: 1.6rem;
+        z-index: map-get($layers, menu);
+        transition: all 0.3s;
+        cursor: pointer;
 
-  &__overlay {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: map-get($layers, overlay);
-    opacity: 0;
-    transition: opacity 0.5s;
+        @include mq("pc") {
+            display: none;
+        }
 
-    &--is-open {
-      width: 100%;
-      height: 100%;
-      opacity: 1;
+        &--is-active {
+            position: fixed;
+            right: 31.6rem;
+        }
     }
-  }
+
+    &__btn {
+        &-open {
+            display: none;
+        }
+
+        &-close {
+            display: none;
+        }
+
+        &--is-active {
+            display: block;
+        }
+    }
+
+    &__overlay {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: map-get($layers, overlay);
+        opacity: 0;
+        transition: opacity 0.5s;
+
+        &--is-open {
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+        }
+    }
 }

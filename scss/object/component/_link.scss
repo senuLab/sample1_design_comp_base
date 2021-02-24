@@ -1,10 +1,10 @@
 .c-link {
-  &--header {
-    line-height: font-height(1.9rem, 1.6rem);
-    font-family: $font-family-montserrat;
-  }
+    &--header {
+        line-height: font-height(19, 16);
+        font-family: $font-family-montserrat;
+    }
 
-  &--footer {
-    color: $color-white;
-  }
+    &--footer {
+        color: $color-white;
+    }
 }

@@ -1,70 +1,72 @@
 .p-top {
-  background: url(./../img/top.png) no-repeat left 22% center / cover;
-  height: 66.7rem;
-
-  @include mq("pc") {
-    height: 64.8rem;
-  }
-
-  &__wrap {
-    @include mq("pc") {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      width: 50%;
-      height: 100%;
-      margin-left: auto;
-      padding-bottom: 15.3rem;
-    }
-  }
-
-  &__head {
-    padding-top: 22rem;
-    margin-bottom: 2.3rem;
-    font-size: 2.4rem;
-    line-height: font-height(4rem, 2.4rem);
-    font-weight: bold;
+    background: url(./../img/top.png) no-repeat left 22% center / cover;
+    height: 66.7rem;
 
     @include mq("pc") {
-      padding: 0;
-      margin-bottom: 2.6rem;
-      font-size: 3.2rem;
-      line-height: font-height(4.8rem, 3.2rem);
+        height: 64.8rem;
     }
-  }
 
-  &__body {
-    margin-bottom: 3rem;
-    font-size: 1.4rem;
-    line-height: font-height(2rem, 1.4rem);
-    font-weight: bold;
-
-    @include mq("pc") {
-      margin-bottom: 3.8rem;
-      font-size: 1.8rem;
-      line-height: font-height(2.8rem, 1.8rem);
-      letter-spacing: 0.45px;
+    &__wrap {
+        @include mq("pc") {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 50%;
+            height: 100%;
+            margin-left: auto;
+            padding-bottom: 15.3rem;
+        }
     }
-  }
 
-  &__btn {
-    display: block;
-    margin: 0 auto;
-    padding: 1.6rem 3.2rem;
-    width: fit-content;
+    &__head {
+        padding-top: 22rem;
+        margin-bottom: 2.3rem;
+        font-size: 2.4rem;
+        line-height: font-height(40, 24);
+        font-weight: bold;
 
-    @include mq("pc") {
-      margin: 0;
-      max-width: 28.2rem;
-      text-align: center;
+        @include mq("pc") {
+            padding: 0;
+            margin-bottom: 2.6rem;
+            font-size: 3.2rem;
+            line-height: font-height(48, 32);
+        }
     }
-  }
 
-  &__hamburger {
-    display: none;
+    &__body {
+        margin-bottom: 3rem;
+        font-size: 1.4rem;
+        line-height: font-height(20, 14);
+        font-weight: bold;
 
-    &--is-active {
-      display: block;
+        @include mq("pc") {
+            margin-bottom: 3.8rem;
+            font-size: 1.8rem;
+            line-height: font-height(28, 18);
+            letter-spacing: font-space(18, 0.45);
+        }
     }
-  }
+
+    &__btn {
+        display: block;
+        margin: 0 auto;
+        padding: 1.6rem 3.2rem;
+        width: fit-content;
+
+        @include mq("pc") {
+            margin: 0;
+            padding: 1.6rem 5rem;
+            max-width: 28.4rem;
+            text-align: center;
+            letter-spacing: font-space(18, 0.45);
+        }
+    }
+
+    &__hamburger {
+        display: none;
+
+        &--is-active {
+            display: block;
+        }
+    }
 }
