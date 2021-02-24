@@ -1,339 +1,339 @@
 .p-contact {
-  overflow: hidden;
-  width: 100%;
-  background: transparent url(./../img/contact-bg@.png) no-repeat center center /
-    cover;
-
-  &__top {
+    overflow: hidden;
     width: 100%;
-    max-width: 96rem;
-    padding: 4rem 1.6rem 3.6rem 1.6rem;
-    margin-top: 4rem;
-    background: transparent url(./../img/contact1@.png) no-repeat center center /
-      cover;
-    border-radius: 1.2rem 1.2rem 0 0;
+    background: transparent url(./../img/contact-bg@.png) no-repeat center
+        center / cover;
 
-    @include mq("pc") {
-      padding: 6rem 0 5.3rem 0;
-      margin: 6rem auto 0;
-      text-align: center;
-    }
-  }
-
-  &__title {
-    margin-bottom: 1.2rem;
-    color: $color-white;
-
-    @include mq("pc") {
-      margin-bottom: 1.3rem;
-    }
-  }
-
-  &__message {
-    color: $color-white;
-    font-size: 1.4rem;
-    line-height: font-height(2rem, 1.4rem);
-
-    @include mq("pc") {
-      font-size: 1.6rem;
-    }
-  }
-
-  &__form {
-    width: 100%;
-    max-width: 96rem;
-    padding: 4rem 1.2rem;
-    margin-bottom: 4rem;
-    background-color: $color-white;
-    border-radius: 0 0 1.2rem 1.2rem;
-
-    @include mq("pc") {
-      margin: 0 auto;
-      padding: 6rem 12rem;
-      margin-bottom: 6rem;
-    }
-  }
-
-  &__form-item {
-    @include mq("pc") {
-      margin-bottom: 3.2rem;
-
-      &:not(:nth-child(6)) {
-        display: flex;
-        align-items: center;
-      }
-    }
-
-    &-gender {
-      margin-bottom: 3.2rem;
-    }
-
-    &-message {
-      margin-bottom: 3.2rem;
-
-      @include mq("pc") {
-        margin-bottom: 4rem;
-      }
-    }
-
-    &-check {
-      @include mq("pc") {
-        margin-bottom: 4.1rem;
-      }
-    }
-  }
-
-  &__label {
-    display: block;
-    margin-bottom: 1.6rem;
-    font-weight: bold;
-
-    @include mq("pc") {
-      display: inline-block;
-      margin-bottom: 0;
-
-      &:not(:last-child) {
-        width: 19rem;
-      }
-    }
-
-    &-radio {
-      display: inline-block;
-      margin-right: 3.5rem;
-      cursor: pointer;
-      position: relative;
-      padding-left: 2rem;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        display: block;
-        width: 1.2rem;
-        height: 1.2rem;
-        background-color: $color-white;
-        border: 0.1rem solid $color-gray;
-        border-radius: 50%;
-        box-sizing: border-box;
-      }
-
-      &:hover {
-        &::before {
-          border: 0.1rem solid #3b69ff;
-        }
-      }
-    }
-
-    &-message {
-      @include mq("pc") {
-        margin-bottom: 0.8rem;
-      }
-    }
-
-    &--required {
-      display: inline-block;
-      position: relative;
-
-      &::after {
-        content: "必須";
-        display: inline-block;
-        position: absolute;
-        top: 50%;
-        right: -6rem;
-        transform: translateY(-50%);
-        width: 2.4rem;
-        height: 1.2rem;
-        padding: 0.2rem 0.8rem;
-        margin-left: 0.9rem;
-        font-size: 1.2rem;
-        color: $color-white;
-        background-color: #ff4646;
-        border-radius: 0.2rem;
+    &__top {
+        width: 100%;
+        max-width: 96rem;
+        padding: 4rem 1.6rem 3.6rem 1.6rem;
+        margin-top: 4rem;
+        background: transparent url(./../img/contact1@.png) no-repeat center
+            center / cover;
+        border-radius: 1.2rem 1.2rem 0 0;
 
         @include mq("pc") {
-          display: inline;
-          position: static;
+            padding: 6rem 0 5.3rem 0;
+            margin: 6rem auto 0;
+            text-align: center;
         }
-      }
     }
 
-    &-checkbox {
-      position: relative;
-      padding-left: 3.8rem;
-      cursor: pointer;
-      margin-bottom: 3.5rem;
+    &__title {
+        margin-bottom: 1.2rem;
+        color: $color-white;
 
-      @include mq("pc") {
-        font-size: 1.8rem;
-      }
-
-      &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        width: 2rem;
-        height: 2rem;
-        border: 1px solid $color-gray;
-        box-sizing: border-box;
-      }
-
-      &:hover {
-        &:before {
-          border: 1px solid #3b69ff;
+        @include mq("pc") {
+            margin-bottom: 1.3rem;
         }
-      }
-    }
-  }
-
-  &__input {
-    display: block;
-    padding: 0 0 0.3rem 0;
-    width: 100%;
-    outline: none;
-    border-bottom: 0.1rem solid rgba($color-black, 0.5);
-    cursor: pointer;
-
-    @include mq("pc") {
-      padding: 1rem 1.2rem 0.8rem 1.2rem;
     }
 
-    &::placeholder {
-      letter-spacing: 0.5px;
+    &__message {
+        color: $color-white;
+        font-size: 1.4rem;
+        line-height: font-height(20, 14);
 
-      @include mq("pc") {
-        letter-spacing: 1.5px;
-      }
-    }
-
-    &-wrap {
-      width: 100%;
-      margin-bottom: 3.2rem;
-
-      @include mq("pc") {
-        margin-bottom: 0;
-        flex: 1;
-        width: auto;
-      }
-
-      &--select {
-        position: relative;
-
-        &::after {
-          content: "";
-          width: 6px;
-          height: 6px;
-          border: 0px;
-          border-bottom: solid 2px $color-black;
-          border-right: solid 2px $color-black;
-          transform: translateY(-70%) rotate(45deg);
-          position: absolute;
-          top: 50%;
-          right: 1.7rem;
-
-          @include mq("pc") {
-            left: 15rem;
-          }
+        @include mq("pc") {
+            font-size: 1.6rem;
         }
-      }
     }
 
-    &-select {
-      height: 3.8rem;
-      border: none;
-      border: 0.1rem solid rgba($color-black, 0.5);
-      padding: 0 0 0 0.8rem;
-      letter-spacing: 1.2px;
-      appearance: none;
-
-      @include mq("pc") {
-        padding: 1.2rem 1.2rem;
-        max-width: 17.8rem;
-        min-height: 4rem;
-        letter-spacing: 2.2px;
-      }
-
-      &:hover {
-        box-shadow: 0 0 0.5rem #4973ff80;
-      }
-    }
-
-    &-radio {
-      display: none;
-
-      &:checked + .p-contact__label-radio::after {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 0.3rem;
-        transform: translateY(-50%);
-        width: 0.6rem;
-        height: 0.6rem;
-        background: #3b69ff;
-        border-radius: 50%;
-        box-sizing: border-box;
-      }
-    }
-
-    &-textarea {
-      max-width: 100%;
-      min-height: 16rem;
-
-      @include mq("pc") {
+    &__form {
         width: 100%;
-        min-height: 20rem;
-      }
+        max-width: 96rem;
+        padding: 4rem 1.2rem;
+        margin-bottom: 4rem;
+        background-color: $color-white;
+        border-radius: 0 0 1.2rem 1.2rem;
+
+        @include mq("pc") {
+            margin: 0 auto;
+            padding: 6rem 12rem;
+            margin-bottom: 6rem;
+        }
     }
 
-    &-checkbox {
-      display: none;
+    &__form-item {
+        @include mq("pc") {
+            margin-bottom: 3.2rem;
 
-      &:checked + .p-contact__checkbox-part::after {
-        content: "";
-        position: absolute;
-        bottom: 0.7rem;
-        left: 0.2rem;
-        transform: rotate(-45deg);
-        width: 1.6rem;
-        height: 0.8rem;
-        border-bottom: 0.2rem solid #3b69ff;
-        border-left: 0.2rem solid #3b69ff;
-        box-sizing: border-box;
-      }
+            &:not(:nth-child(6)) {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &-gender {
+            margin-bottom: 3.2rem;
+        }
+
+        &-message {
+            margin-bottom: 3.2rem;
+
+            @include mq("pc") {
+                margin-bottom: 4rem;
+            }
+        }
+
+        &-check {
+            @include mq("pc") {
+                margin-bottom: 4.1rem;
+            }
+        }
     }
 
-    &--hover-border {
-      &:hover {
-        border: 0.1rem solid #4973ff;
-      }
+    &__label {
+        display: block;
+        margin-bottom: 1.6rem;
+        font-weight: bold;
 
-      &:focus {
-        border: 0.1rem solid #4973ff;
-      }
+        @include mq("pc") {
+            display: inline-block;
+            margin-bottom: 0;
+
+            &:not(:last-child) {
+                width: 19rem;
+            }
+        }
+
+        &-radio {
+            display: inline-block;
+            margin-right: 3.5rem;
+            cursor: pointer;
+            position: relative;
+            padding-left: 2rem;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                display: block;
+                width: 1.2rem;
+                height: 1.2rem;
+                background-color: $color-white;
+                border: 0.1rem solid $color-gray;
+                border-radius: 50%;
+                box-sizing: border-box;
+            }
+
+            &:hover {
+                &::before {
+                    border: 0.1rem solid #3b69ff;
+                }
+            }
+        }
+
+        &-message {
+            @include mq("pc") {
+                margin-bottom: 0.8rem;
+            }
+        }
+
+        &--required {
+            display: inline-block;
+            position: relative;
+
+            &::after {
+                content: "必須";
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                right: -6rem;
+                transform: translateY(-50%);
+                width: 2.4rem;
+                height: 1.2rem;
+                padding: 0.2rem 0.8rem;
+                margin-left: 0.9rem;
+                font-size: 1.2rem;
+                color: $color-white;
+                background-color: #ff4646;
+                border-radius: 0.2rem;
+
+                @include mq("pc") {
+                    display: inline;
+                    position: static;
+                }
+            }
+        }
+
+        &-checkbox {
+            position: relative;
+            padding-left: 3.8rem;
+            cursor: pointer;
+            margin-bottom: 3.5rem;
+
+            @include mq("pc") {
+                font-size: 1.8rem;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 2rem;
+                height: 2rem;
+                border: 1px solid $color-gray;
+                box-sizing: border-box;
+            }
+
+            &:hover {
+                &:before {
+                    border: 1px solid #3b69ff;
+                }
+            }
+        }
     }
 
-    &--hover-border-bottom {
-      &:hover {
-        border-bottom: 0.1rem solid #4973ff;
-      }
+    &__input {
+        display: block;
+        padding: 0 0 0.3rem 0;
+        width: 100%;
+        outline: none;
+        border-bottom: 0.1rem solid rgba($color-black, 0.5);
+        cursor: pointer;
 
-      &:focus {
-        border-bottom: 0.1rem solid #4973ff;
-      }
+        @include mq("pc") {
+            padding: 1rem 1.2rem 0.8rem 1.2rem;
+        }
+
+        &::placeholder {
+            letter-spacing: 0.05em;
+
+            @include mq("pc") {
+                letter-spacing: 0.2em;
+            }
+        }
+
+        &-wrap {
+            width: 100%;
+            margin-bottom: 3.2rem;
+
+            @include mq("pc") {
+                margin-bottom: 0;
+                flex: 1;
+                width: auto;
+            }
+
+            &--select {
+                position: relative;
+
+                &::after {
+                    content: "";
+                    width: 6px;
+                    height: 6px;
+                    border: 0px;
+                    border-bottom: solid 2px $color-black;
+                    border-right: solid 2px $color-black;
+                    transform: translateY(-70%) rotate(45deg);
+                    position: absolute;
+                    top: 50%;
+                    right: 1.7rem;
+
+                    @include mq("pc") {
+                        left: 15rem;
+                    }
+                }
+            }
+        }
+
+        &-select {
+            height: 3.8rem;
+            border: none;
+            border: 0.1rem solid rgba($color-black, 0.5);
+            padding: 0 0 0 0.8rem;
+            letter-spacing: 0.1em;
+            appearance: none;
+
+            @include mq("pc") {
+                padding: 1.2rem 1.2rem;
+                max-width: 17.8rem;
+                min-height: 4rem;
+                letter-spacing: 0.2em;
+            }
+
+            &:hover {
+                box-shadow: 0 0 0.5rem #4973ff80;
+            }
+        }
+
+        &-radio {
+            display: none;
+
+            &:checked + .p-contact__label-radio::after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 0.3rem;
+                transform: translateY(-50%);
+                width: 0.6rem;
+                height: 0.6rem;
+                background: #3b69ff;
+                border-radius: 50%;
+                box-sizing: border-box;
+            }
+        }
+
+        &-textarea {
+            max-width: 100%;
+            min-height: 16rem;
+
+            @include mq("pc") {
+                width: 100%;
+                min-height: 20rem;
+            }
+        }
+
+        &-checkbox {
+            display: none;
+
+            &:checked + .p-contact__checkbox-part::after {
+                content: "";
+                position: absolute;
+                bottom: 0.7rem;
+                left: 0.2rem;
+                transform: rotate(-45deg);
+                width: 1.6rem;
+                height: 0.8rem;
+                border-bottom: 0.2rem solid #3b69ff;
+                border-left: 0.2rem solid #3b69ff;
+                box-sizing: border-box;
+            }
+        }
+
+        &--hover-border {
+            &:hover {
+                border: 0.1rem solid #4973ff;
+            }
+
+            &:focus {
+                border: 0.1rem solid #4973ff;
+            }
+        }
+
+        &--hover-border-bottom {
+            &:hover {
+                border-bottom: 0.1rem solid #4973ff;
+            }
+
+            &:focus {
+                border-bottom: 0.1rem solid #4973ff;
+            }
+        }
     }
-  }
 
-  &__btn {
-    padding: 1.6rem 5rem;
-    margin: 0 auto;
+    &__btn {
+        padding: 1.6rem 5rem;
+        margin: 0 auto;
 
-    @include mq("pc") {
-      margin: 0;
+        @include mq("pc") {
+            margin: 0;
+        }
     }
-  }
 }

@@ -1,3 +1,7 @@
 @function font-height($line-height, $font-size) {
-  @return $line-height / $font-size;
+    @return $line-height / $font-size * 1em;
+}
+
+@function font-space($font-size, $space-size) {
+    @return $space-size / $font-size * 1em;
 }

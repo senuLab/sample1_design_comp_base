@@ -192,7 +192,7 @@ body {
 }
 
 .c-link--header {
-  line-height: 1.1875;
+  line-height: 1.1875em;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -203,7 +203,7 @@ body {
 .c-logo--header {
   font-weight: 600;
   font-size: 2.3rem;
-  line-height: 1.21739;
+  line-height: 1.21739em;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -215,7 +215,7 @@ body {
 .c-title {
   font-weight: 600;
   font-size: 3rem;
-  line-height: 1.23333;
+  line-height: 1.23333em;
   font-family: "Montserrat", sans-serif;
   text-align: center;
 }
@@ -235,7 +235,7 @@ body {
   margin-bottom: 2.4rem;
   color: #ffffff;
   font-size: 1.4rem;
-  line-height: 1.42857;
+  line-height: 1.42857em;
 }
 
 .p-access__map-wrap {
@@ -260,7 +260,7 @@ body {
   font-weight: 600;
   font-size: 1.8rem;
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 1.8px;
+  letter-spacing: 0.1em;
 }
 
 .p-body--is-open {
@@ -302,7 +302,7 @@ body {
   width: 6rem;
   height: 6rem;
   margin-right: 2rem;
-  line-height: 1.5;
+  line-height: 1.5em;
 }
 
 .p-comments__img--pc {
@@ -311,7 +311,7 @@ body {
 
 .p-comments__comment {
   font-size: 1.4rem;
-  line-height: 1.46429;
+  line-height: 1.46429em;
 }
 
 .p-contact {
@@ -337,7 +337,7 @@ body {
 .p-contact__message {
   color: #ffffff;
   font-size: 1.4rem;
-  line-height: 1.42857;
+  line-height: 1.42857em;
 }
 
 .p-contact__form {
@@ -446,15 +446,15 @@ body {
 }
 
 .p-contact__input::-moz-placeholder {
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
 }
 
 .p-contact__input:-ms-input-placeholder {
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
 }
 
 .p-contact__input::placeholder {
-  letter-spacing: 0.5px;
+  letter-spacing: 0.05em;
 }
 
 .p-contact__input-wrap {
@@ -487,7 +487,7 @@ body {
   padding: 0 0 0 0.8rem;
   border: none;
   border: 0.1rem solid rgba(62, 62, 62, 0.5);
-  letter-spacing: 1.2px;
+  letter-spacing: 0.1em;
 }
 
 .p-contact__input-select:hover {
@@ -619,7 +619,7 @@ body {
   font-weight: 400;
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.025em;
 }
 
 .p-header {
@@ -676,7 +676,7 @@ body {
   margin-bottom: 3.2rem;
   font-weight: 500;
   font-size: 1.8rem;
-  line-height: 1.22222;
+  line-height: 1.22222em;
   text-align: center;
 }
 
@@ -817,8 +817,8 @@ body {
   padding-top: 0.2rem;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 1.42857;
-  letter-spacing: 0.35px;
+  line-height: 1.42857em;
+  letter-spacing: 0.025em;
 }
 
 .p-news__category {
@@ -832,13 +832,13 @@ body {
   flex: 1;
   margin-right: 3.883rem;
   font-size: 1.4rem;
-  line-height: 1.42857;
+  line-height: 1.42857em;
 }
 
 .p-news__btn {
   width: 26.8rem;
   margin: 4rem auto;
-  letter-spacing: 3.6px;
+  letter-spacing: 0.2em;
 }
 
 .p-price {
@@ -867,7 +867,7 @@ body {
 
 .p-price__caution {
   font-size: 1.2rem;
-  line-height: 1.66667;
+  line-height: 1.66667em;
 }
 
 .p-qa {
@@ -901,7 +901,7 @@ body {
   padding-left: 4rem;
   font-weight: bold;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.5em;
 }
 
 .p-qa__question::before {
@@ -933,7 +933,7 @@ body {
 
 .p-qa__answer {
   font-size: 1.4rem;
-  line-height: 1.42857;
+  line-height: 1.42857em;
 }
 
 .p-qa__answer-wrap {
@@ -972,13 +972,13 @@ body {
   padding-bottom: 0.7rem;
   font-weight: bold;
   font-size: 1.4rem;
-  line-height: 1.14286;
+  line-height: 1.14286em;
 }
 
 .p-results__body {
   font-size: 1.2rem;
-  line-height: 1.5;
-  letter-spacing: -0.09px;
+  line-height: 1.5em;
+  letter-spacing: 0.00083em;
 }
 
 .p-results__btn {
@@ -986,8 +986,8 @@ body {
   margin-top: 2.2rem;
   margin-left: 1.2rem;
   font-size: 1.8rem;
-  line-height: 1.27778;
-  letter-spacing: 3.6px;
+  line-height: 1.27778em;
+  letter-spacing: 0.2em;
 }
 
 .p-results__page {
@@ -1027,15 +1027,15 @@ body {
   margin-bottom: 1.8rem;
   font-weight: 600;
   font-size: 2rem;
-  line-height: 1.2;
+  line-height: 1.2em;
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 4px;
+  letter-spacing: 0.2em;
   text-align: center;
 }
 
 .p-service__body {
   font-size: 1.4rem;
-  line-height: 1.71429;
+  line-height: 1.71429em;
 }
 
 .p-table {
@@ -1064,14 +1064,14 @@ body {
   padding-top: 22rem;
   font-weight: bold;
   font-size: 2.4rem;
-  line-height: 1.66667;
+  line-height: 1.66667em;
 }
 
 .p-top__body {
   margin-bottom: 3rem;
   font-weight: bold;
   font-size: 1.4rem;
-  line-height: 1.42857;
+  line-height: 1.42857em;
 }
 
 .p-top__btn {
@@ -1117,7 +1117,7 @@ body {
   }
   .c-title {
     font-size: 3.6rem;
-    line-height: 1.22222;
+    line-height: 1.22222em;
   }
   .p-access {
     position: relative;
@@ -1145,7 +1145,7 @@ body {
   }
   .p-access__address {
     font-size: 1.6rem;
-    line-height: 1.5;
+    line-height: 1.5em;
   }
   .p-access__map-wrap {
     min-height: 52rem;
@@ -1164,7 +1164,7 @@ body {
     margin-top: 3.2rem;
     margin-right: 10rem;
     font-size: 2rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
   }
   .p-card {
     width: 40rem;
@@ -1215,7 +1215,7 @@ body {
   }
   .p-comments__comment {
     font-size: 1.6rem;
-    line-height: 1.5;
+    line-height: 1.5em;
   }
   .p-contact__top {
     margin: 6rem auto 0;
@@ -1267,13 +1267,13 @@ body {
     padding: 1rem 1.2rem 0.8rem 1.2rem;
   }
   .p-contact__input::-moz-placeholder {
-    letter-spacing: 1.5px;
+    letter-spacing: 0.2em;
   }
   .p-contact__input:-ms-input-placeholder {
-    letter-spacing: 1.5px;
+    letter-spacing: 0.2em;
   }
   .p-contact__input::placeholder {
-    letter-spacing: 1.5px;
+    letter-spacing: 0.2em;
   }
   .p-contact__input-wrap {
     flex: 1;
@@ -1287,7 +1287,7 @@ body {
     max-width: 17.8rem;
     min-height: 4rem;
     padding: 1.2rem 1.2rem;
-    letter-spacing: 2.2px;
+    letter-spacing: 0.2em;
   }
   .p-contact__input-textarea {
     width: 100%;
@@ -1335,8 +1335,8 @@ body {
   .p-header__nav-link {
     margin-right: 4rem;
     font-size: 1.6rem;
-    line-height: 1.1875;
-    letter-spacing: -0.97px;
+    line-height: 1.1875em;
+    letter-spacing: -0.025em;
   }
   .p-header__nav-link:last-child {
     margin-right: 0;
@@ -1407,25 +1407,25 @@ body {
   .p-news__date {
     margin-right: 4rem;
     font-size: 1.8rem;
-    line-height: 1.44444;
-    letter-spacing: 0.45px;
+    line-height: 1.44444em;
+    letter-spacing: 0.025em;
   }
   .p-news__category {
     margin-right: 3.2rem;
     padding: 0.8rem 3rem;
     font-size: 1.4rem;
-    line-height: 1;
-    letter-spacing: 0.35px;
+    line-height: 1em;
+    letter-spacing: 0.025em;
   }
   .p-news__content {
     margin-right: 8.3rem;
     font-size: 1.8rem;
-    line-height: 1.55556;
-    letter-spacing: 0.45px;
+    line-height: 1.55556em;
+    letter-spacing: 0.025em;
   }
   .p-news__btn {
     width: 23.6rem;
-    letter-spacing: 4px;
+    letter-spacing: 0.2em;
   }
   .p-price {
     height: 54.9rem;
@@ -1459,7 +1459,7 @@ body {
   }
   .p-qa__answer {
     font-size: 1.6rem;
-    line-height: 1.5;
+    line-height: 1.5em;
   }
   .p-qa__answer-wrap {
     margin-top: 1.6rem;
@@ -1483,11 +1483,11 @@ body {
   .p-results__head {
     padding-bottom: 1rem;
     font-size: 2rem;
-    line-height: 1.2;
+    line-height: 1.2em;
   }
   .p-results__body {
     font-size: 1.6rem;
-    line-height: 1.5;
+    line-height: 1.5em;
   }
   .p-results__btn {
     width: 28.9rem;
@@ -1495,8 +1495,8 @@ body {
     margin: 0;
     margin-top: 4rem;
     font-size: 2rem;
-    line-height: 1.125;
-    letter-spacing: 4px;
+    line-height: 1.125em;
+    letter-spacing: 0.2em;
   }
   .p-results__page {
     margin-top: 4rem;
@@ -1527,8 +1527,8 @@ body {
   }
   .p-service__head {
     margin-bottom: 1rem;
-    line-height: 1.4;
-    letter-spacing: 4px;
+    line-height: 1.4em;
+    letter-spacing: 0.2em;
   }
   .p-to-top {
     right: 4rem;
@@ -1551,17 +1551,19 @@ body {
     margin-bottom: 2.6rem;
     padding: 0;
     font-size: 3.2rem;
-    line-height: 1.5;
+    line-height: 1.5em;
   }
   .p-top__body {
     margin-bottom: 3.8rem;
     font-size: 1.8rem;
-    line-height: 1.55556;
-    letter-spacing: 0.45px;
+    line-height: 1.55556em;
+    letter-spacing: 0.025em;
   }
   .p-top__btn {
-    max-width: 28.2rem;
+    max-width: 28.4rem;
     margin: 0;
+    padding: 1.6rem 5rem;
+    letter-spacing: 0.025em;
     text-align: center;
   }
   .u-display--pc-none {

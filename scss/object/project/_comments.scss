@@ -1,117 +1,117 @@
 .p-comments {
-  overflow: hidden;
-  background: linear-gradient(
-    to bottom,
-    $color-lightgray 0%,
-    $color-lightgray 12.8%,
-    $color-black 12.8%,
-    $color-black 100%
-  );
-
-  @include mq("pc") {
-    position: relative;
+    overflow: hidden;
     background: linear-gradient(
-      to right,
-      transparent 0%,
-      transparent 76.5%,
-      $color-lightgray 76.5%,
-      $color-lightgray 100%
-    );
-
-    &::after {
-      content: "";
-      display: inline-block;
-      position: absolute;
-      z-index: map-get($layers, bg-back);
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(
         to bottom,
         $color-lightgray 0%,
-        $color-lightgray 20.1%,
-        $color-black 20.1%,
+        $color-lightgray 12.8%,
+        $color-black 12.8%,
         $color-black 100%
-      );
-    }
-  }
-
-  &__wrap {
-    background-color: $color-white;
-    width: 100%;
-    height: auto;
-    margin-bottom: 6rem;
-    box-shadow: 0 0.5rem 1.2rem #3e3e3e33;
+    );
 
     @include mq("pc") {
-      width: 55.5%;
-      height: auto;
-      margin-bottom: 0;
+        position: relative;
+        background: linear-gradient(
+            to right,
+            transparent 0%,
+            transparent 76.5%,
+            $color-lightgray 76.5%,
+            $color-lightgray 100%
+        );
+
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            z-index: map-get($layers, bg-back);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom,
+                $color-lightgray 0%,
+                $color-lightgray 20.1%,
+                $color-black 20.1%,
+                $color-black 100%
+            );
+        }
     }
 
-    &--pc {
-      @include mq("pc") {
-        display: flex;
+    &__wrap {
+        background-color: $color-white;
         width: 100%;
         height: auto;
-        margin-bottom: 12rem;
-      }
-    }
-  }
-
-  &__title {
-    margin-bottom: 4rem;
-    text-align: left;
-
-    @include mq("pc") {
-      margin-bottom: 5.8rem;
-    }
-  }
-
-  &__item {
-    display: flex;
-
-    &:not(:last-child) {
-      margin-bottom: 3.4rem;
-
-      @include mq("pc") {
         margin-bottom: 6rem;
-      }
+        box-shadow: 0 0.5rem 1.2rem #3e3e3e33;
+
+        @include mq("pc") {
+            width: 55.5%;
+            height: auto;
+            margin-bottom: 0;
+        }
+
+        &--pc {
+            @include mq("pc") {
+                display: flex;
+                width: 100%;
+                height: auto;
+                margin-bottom: 12rem;
+            }
+        }
     }
-  }
 
-  &__img {
-    width: 6rem;
-    height: 6rem;
-    margin-right: 2rem;
-    line-height: font-height(2.4rem, 1.6rem);
+    &__title {
+        margin-bottom: 4rem;
+        text-align: left;
 
-    @include mq("pc") {
-      width: 10rem;
-      height: 10rem;
-      margin-right: 3.2rem;
+        @include mq("pc") {
+            margin-bottom: 5.8rem;
+        }
     }
 
-    &--pc {
-      display: none;
+    &__item {
+        display: flex;
 
-      @include mq("pc") {
-        display: block;
-        width: 44.5%;
-        height: auto;
-        margin: auto 0;
-      }
+        &:not(:last-child) {
+            margin-bottom: 3.4rem;
+
+            @include mq("pc") {
+                margin-bottom: 6rem;
+            }
+        }
     }
-  }
 
-  &__comment {
-    font-size: 1.4rem;
-    line-height: font-height(2.05rem, 1.4rem);
+    &__img {
+        width: 6rem;
+        height: 6rem;
+        margin-right: 2rem;
+        line-height: font-height(24, 16);
 
-    @include mq("pc") {
-      font-size: 1.6rem;
-      line-height: font-height(2.4rem, 1.6rem);
+        @include mq("pc") {
+            width: 10rem;
+            height: 10rem;
+            margin-right: 3.2rem;
+        }
+
+        &--pc {
+            display: none;
+
+            @include mq("pc") {
+                display: block;
+                width: 44.5%;
+                height: auto;
+                margin: auto 0;
+            }
+        }
     }
-  }
+
+    &__comment {
+        font-size: 1.4rem;
+        line-height: font-height(20.5, 14);
+
+        @include mq("pc") {
+            font-size: 1.6rem;
+            line-height: font-height(24, 16);
+        }
+    }
 }

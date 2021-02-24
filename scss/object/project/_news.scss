@@ -1,130 +1,130 @@
 .p-news {
-  position: relative;
-  height: 57.4rem;
-  background-color: $color-lightgray;
-
-  @include mq("pc") {
-    overflow: hidden;
-    height: auto;
-    max-height: none;
-    min-height: 89.9rem;
-  }
-
-  &__wrap {
-    position: absolute;
-    top: -4rem;
-    width: inherit;
-    height: auto;
-    max-height: 55.3rem;
-    background-color: $color-white;
-    box-shadow: 0 0.5rem 1.2rem #3e3e3e33;
+    position: relative;
+    height: 57.4rem;
+    background-color: $color-lightgray;
 
     @include mq("pc") {
-      overflow: hidden;
-      position: static;
-      width: 100%;
-      height: auto;
-      margin: 12rem 0;
-      min-height: 65.9rem;
-      max-height: none;
+        overflow: hidden;
+        height: auto;
+        max-height: none;
+        min-height: 89.9rem;
     }
-  }
 
-  &__title {
-    padding: 4rem 0 4.2rem 0;
-    border-bottom: 0.1rem solid #cecdcd;
+    &__wrap {
+        position: absolute;
+        top: -4rem;
+        width: inherit;
+        height: auto;
+        max-height: 55.3rem;
+        background-color: $color-white;
+        box-shadow: 0 0.5rem 1.2rem #3e3e3e33;
 
-    @include mq("pc") {
-      padding: 6rem 0;
-      margin: 0 6rem;
+        @include mq("pc") {
+            overflow: hidden;
+            position: static;
+            width: 100%;
+            height: auto;
+            margin: 12rem 0;
+            min-height: 65.9rem;
+            max-height: none;
+        }
     }
-  }
 
-  &__link {
-    cursor: pointer;
-  }
+    &__title {
+        padding: 4rem 0 4.2rem 0;
+        border-bottom: 0.1rem solid #cecdcd;
 
-  &__inner {
-    @include mq("pc") {
-      display: flex;
-      align-items: center;
+        @include mq("pc") {
+            padding: 6rem 0;
+            margin: 0 6rem;
+        }
     }
-  }
 
-  &__item {
-    background: transparent url(./../img/news-arrow.svg) no-repeat center right
-      1.6rem;
-    transition: background-color 0.3s;
-
-    @include mq("pc") {
-      background-position: center right 7.6rem;
+    &__link {
+        cursor: pointer;
     }
-  }
 
-  &__head {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.2rem;
-
-    @include mq("pc") {
-      margin: 0;
-      width: 29.9rem;
+    &__inner {
+        @include mq("pc") {
+            display: flex;
+            align-items: center;
+        }
     }
-  }
 
-  &__date {
-    margin-right: 2.3rem;
-    padding-top: 0.2rem;
-    font-size: 1.4rem;
-    line-height: font-height(2rem, 1.4rem);
-    letter-spacing: 0.35px;
-    font-weight: 400;
+    &__item {
+        background: transparent url(./../img/news-arrow.svg) no-repeat center
+            right 1.6rem;
+        transition: background-color 0.3s;
 
-    @include mq("pc") {
-      margin-right: 4rem;
-      font-size: 1.8rem;
-      line-height: font-height(2.6rem, 1.8rem);
-      letter-spacing: 0.45px;
+        @include mq("pc") {
+            background-position: center right 7.6rem;
+        }
     }
-  }
 
-  &__category {
-    padding: 0.2rem 1.4rem;
-    border: 0.2rem solid $color-blue;
-    border-radius: 5rem;
-    font-size: 1.2rem;
+    &__head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.2rem;
 
-    @include mq("pc") {
-      padding: 0.8rem 3rem;
-      margin-right: 3.2rem;
-      font-size: 1.4rem;
-      line-height: font-height(1.4rem, 1.4rem);
-      letter-spacing: 0.35px;
+        @include mq("pc") {
+            margin: 0;
+            width: 29.9rem;
+        }
     }
-  }
 
-  &__content {
-    margin-right: 3.883rem;
-    flex: 1;
-    font-size: 1.4rem;
-    line-height: font-height(2rem, 1.4rem);
+    &__date {
+        margin-right: 2.3rem;
+        padding-top: 0.2rem;
+        font-size: 1.4rem;
+        line-height: font-height(20, 14);
+        letter-spacing: font-space(14, 0.35);
+        font-weight: 400;
 
-    @include mq("pc") {
-      margin-right: 8.3rem;
-      font-size: 1.8rem;
-      line-height: font-height(2.8rem, 1.8rem);
-      letter-spacing: 0.45px;
+        @include mq("pc") {
+            margin-right: 4rem;
+            font-size: 1.8rem;
+            line-height: font-height(26, 18);
+            letter-spacing: font-space(18, 0.45);
+        }
     }
-  }
 
-  &__btn {
-    margin: 4rem auto;
-    width: 26.8rem;
-    letter-spacing: 3.6px;
+    &__category {
+        padding: 0.2rem 1.4rem;
+        border: 0.2rem solid $color-blue;
+        border-radius: 5rem;
+        font-size: 1.2rem;
 
-    @include mq("pc") {
-      width: 23.6rem;
-      letter-spacing: 4px;
+        @include mq("pc") {
+            padding: 0.8rem 3rem;
+            margin-right: 3.2rem;
+            font-size: 1.4rem;
+            line-height: font-height(14, 14);
+            letter-spacing: font-space(14, 0.35);
+        }
     }
-  }
+
+    &__content {
+        margin-right: 3.883rem;
+        flex: 1;
+        font-size: 1.4rem;
+        line-height: font-height(20, 14);
+
+        @include mq("pc") {
+            margin-right: 8.3rem;
+            font-size: 1.8rem;
+            line-height: font-height(28, 18);
+            letter-spacing: font-space(18, 0.45);
+        }
+    }
+
+    &__btn {
+        margin: 4rem auto;
+        width: 26.8rem;
+        letter-spacing: font-space(18, 3.6);
+
+        @include mq("pc") {
+            width: 23.6rem;
+            letter-spacing: font-space(20, 4);
+        }
+    }
 }
